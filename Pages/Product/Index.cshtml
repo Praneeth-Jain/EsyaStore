@@ -1,0 +1,51 @@
+﻿@page
+@model EsyaStore.Pages.Product.IndexModel
+@{
+}
+
+<div class="container d-grid">
+    <div class="row bg-danger d-flex justify-content-end" style="min-height:10vh;">
+        <button class="btn btn-primary col-1">
+        <a class="text-decoration-none text-light">Add Product</a>
+        </button>
+        <button class="btn btn-primary col-1">
+        <a class="text-decoration-none text-light">My Cart</a>
+        </button>
+        <button class="btn btn-primary col-1">
+        <a class="text-decoration-none text-light">My Orders</a>
+        </button>
+
+    </div>
+    <div class="row">
+
+
+    <div class="col-2 bg-dark" style="min-height:100vh;">
+
+    </div>
+    <div class="col-10 h-100 bg-secondary" style="min-height:100vh;">
+        <div class="container d-grid mt-5 ">
+    <div class="row">
+        @{
+            for(var i=0;i<20;i++){
+    <div class="col-md-4">   
+        <div class="card shadow mt-3" style="width: 18rem; min-height:20rem">
+                        <span class="btn-danger position-absolute top-0 float-end text-center" style="width:30px;">
+                            <a class="text-decoration-none text-light" asp-route-id=PId asp-page-handler="DeleteProduct" asp-page="/Product/Index">X</a>
+                        </span>
+                <img src="ProductImgPath" class="card-img-top" style="min-height:10rem" alt="..." />
+
+                <div class="card-body">
+                <p class="card-title">Product Name</p>
+                <p class="card-text">&#8377; ProductPrice</p>
+            </div>
+            </div>
+    </div>
+            }
+            }
+    </div>
+
+    </div>
+</div>
+
+</div>
+</div>

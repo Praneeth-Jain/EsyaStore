@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="Pages\Admin\" />
-    <Folder Include="Pages\Product\" />
     <Folder Include="Pages\User\" />
     <Folder Include="Pages\Seller\" />
   </ItemGroup>
