@@ -1,0 +1,56 @@
+﻿@page
+@model EsyaStore.Pages.ProductUI.AddProductModel
+@{
+}
+
+
+<div class="login">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="register-form">
+                    <h2>Add a Product</h2>
+                    <div class="row">
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="col-md-6">
+                                <label>Product Name</label>
+                                <input class="form-control" type="text" placeholder="Product Name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label>Product Description</label>
+                                <input class="form-control" type="text" placeholder="Product Description">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Price</label>
+                                <input class="form-control" type="number" placeholder="Price">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Quantiy Available</label>
+                                <input class="form-control" type="number" placeholder="Quantiy">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Category</label>
+                                <input class="form-control" type="text" placeholder="Category">
+                            </div>
+                            <div class="col-md-6">
+                                <label>ManuFacturer</label>
+                                <input class="form-control" type="text" placeholder="ManuFacturer Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="imageUpload">Upload Image</label>
+                                <input type="file" id="imageUpload" name="image" accept="image/*">
+                            </div>
+
+                            <div class="col-md-12">
+                                <button type="submit" class="btn">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - EsyaStore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/js/slick/slick-theme.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/js/slick/slick.css" asp-append-version="true" />
@@ -29,13 +30,16 @@
                             <a href="checkout.html" class="nav-item nav-link">Checkout</a>
                             <a class="nav-item nav-link" asp-area="" asp-page="/UserUI/UserRegister"> Register</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    More Pages
+                                </a>
                                 <div class="dropdown-menu">
                                     <a href="wishlist.html" class="dropdown-item">Wishlist</a>
                                     <a href="login.html" class="dropdown-item">Login & Register</a>
                                     <a href="contact.html" class="dropdown-item">Contact Us</a>
                                 </div>
                             </div>
+
                         </div>
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
@@ -55,19 +59,21 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
+     </div>
+ @{
+     // <footer class="border-top footer text-muted">
+     //     <div class="container">
+     //         &copy; 2024 - EsyaStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+     //     </div>
+     // </footer>
+ }
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - EsyaStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
-    
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/easing/easing.min.js"></script>
     <script src="~/js/slick/slick.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
