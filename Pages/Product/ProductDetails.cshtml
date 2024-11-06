@@ -17,6 +17,9 @@
         </div>
     </div>
     <div class="container">
+        <form  method="post" asp-page-handler="AddCart">
+            <input type="hidden" value="@Model.Products.Id" asp-for="@Model.ProductDetailId" />
         <button class="btn btn-secondary">Add To Cart</button>
+        </form>
     </div>
 </div>

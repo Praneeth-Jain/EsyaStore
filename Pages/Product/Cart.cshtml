@@ -1,0 +1,31 @@
+﻿@page
+@model EsyaStore.Pages.Product.CartModel
+@{
+}
+<h1>My Cart</h1>
+<div class="container">
+    @{
+
+        foreach(var prods in Model.CartProducts)
+        {   
+        <div class="card d-grid">
+        <div class="row">
+        <div class="col-4">
+                <span class="btn-danger position-absolute top-0 float-end text-center" style="width:30px;">
+                    <form method="post" asp-page-handler="DeleteFromCart">
+                        <input type="hidden" name="cartId" value="@prods.CartId" />
+                        <button type="submit">X</button>
+                    </form>
+                </span>
+        <img class="card-img" src="~/uploads/@prods.Product.ProdImgUrl" alt="Alternate Text" style="height:30vh; width:20vw;" />
+        </div>
+        <div class="col-8"  >
+        <p class="card-title">@prods.Product.ProductName</p>
+        <p class="card-text">@prods.Product.ProductPrice</p>
+        <button class="btn btn-primary">Buy Now</button>
+        </div>
+        </div>
+    </div>
+        }
+    }
+</div>
