@@ -23,7 +23,6 @@ namespace EsyaStore.Pages.User
 
         public void OnGet()
         {
-            reg = new userregisterModelClass();
         }
 
         public IActionResult OnPost()
@@ -42,7 +41,7 @@ namespace EsyaStore.Pages.User
             };
             _context.users.Add(newuser);
             _context.SaveChanges();
-
-            return RedirectToPage("/Login");     }
+            return RedirectToPage("/Login");  
+        }
     }
 }

@@ -5,18 +5,19 @@ namespace EsyaStore.Model
     public class userregisterModelClass
     {
         [Required]
-        public string Name;
+        
+        public string Name { get; set; }
 
         [Required]
-        public string Email;
+        public string Email {  get; set; }
 
         [Required]
-        public string Password;
+        public string Password { get; set; }
 
         [Required]
-        public string Confirmpassword;
+        public string Confirmpassword { get; set; }
 
         [Required]
-        public string Contact;
+        public string Contact {  get; set; }
     }
 }
