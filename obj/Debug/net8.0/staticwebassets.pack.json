@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EsyaStore.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/2ReLmW/4NYkvDLftKyHwm61R9Uh36WIupikh762ytc=",
+  "Hash": "jdkEPQbZP8roVNW9J9hMctIOy/d/c+pwq0GVX+6bZ/0=",
   "Source": "EsyaStore",
   "BasePath": "_content/EsyaStore",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
+      "SourceId": "EsyaStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\",
+      "BasePath": "_content/EsyaStore",
+      "RelativePath": "uploads/65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
     }
   ]
 }

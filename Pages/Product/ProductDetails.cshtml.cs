@@ -2,24 +2,21 @@ using EsyaStore.Data.Context;
 using EsyaStore.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System;
 
 namespace EsyaStore.Pages.Product
 {
-    public class IndexModel : PageModel
+    public class ProductDetailsModel : PageModel
     {
         private readonly ApplicationDbContext _context;
 
-        public int id { get; set; }
-        public List<Products> ProductList { get; set; }
-
-        public IndexModel (ApplicationDbContext context)
+        public Products Products { get; set; }
+        public ProductDetailsModel(ApplicationDbContext context)
         {
             _context = context;
         }
-        public void OnGet()
+        public void OnGet(int? id)
         {
-            ProductList = _context.products.ToList();
+            Products=_context.products.Find(id);
         }
     }
 }
