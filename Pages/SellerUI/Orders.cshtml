@@ -3,42 +3,58 @@
 @{
 }
 
-<h3>Orders : </h3>
+
 <div class="product-view">
     <div class="container-fluid">
+        <div class="product-price m-2">
+            <h3>Got New Products: </h3>
+            <a class="btn rise" asp-page="../ProductUI/AddProduct">Add Product</a>
+
+
+        </div>
+        <h3>Orders : </h3>
         <div class="row">
             <div class="col-lg-8">
                 <div class="row">
 
+                    @{
+                        for(int i = 0; i < @Model.listOfOrders.Count(); i++)
+                        {
 
-                    <div class="col-md-4">
-                        <div class="product-item">
-                            <div class="product-title">
-                                <a href="#">Product Name</a>
-                                <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                            <div class="col-md-4">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">@Model.listOfProducts[i].ProductName</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img height="320px" width="320px" src="@Model.listOfProducts[i].ProdImgUrl" alt="Product Image" style="object-fit: contain;">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span></span>@Model.listOfProducts[i].ProductPrice</h3>
+                                        <h4>Order By: @Model.listOfUsers[0].Name</h4>
+                                        <h4>Contact Number: @Model.listOfUsers[0].Contact</h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="img/product-1.jpg" alt="Product Image">
-                                </a>
-                                <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href="#"><i class="fa fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-price">
-                                <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
+
+
+                        }
+                    }
+
+                    
+
+
+
                 </div>
             </div>
         </div>

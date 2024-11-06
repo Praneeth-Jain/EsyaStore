@@ -13,26 +13,32 @@
                     <div class="row">
                         <form method="post">
                             <div class="col-md-6">
-                                <label>First Name</label>
-                                <input class="form-control" type="text" placeholder="Name">
+                                <label asp-for="tempSellerRegister.Name">Name</label>
+                                <input asp-for="tempSellerRegister.Name" class="form-control">
+                                <span asp-validation-for="tempSellerRegister.Name"></span>
                             </div>
                            
                             <div class="col-md-6">
-                                <label>E-mail</label>
-                                <input class="form-control" type="text" placeholder="E-mail">
+                                <label asp-for="tempSellerRegister.Email">Email</label>
+                                <input asp-for="tempSellerRegister.Email" class="form-control">
+                                <span asp-validation-for="tempSellerRegister.Email"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Mobile No</label>
-                                <input class="form-control" type="text" placeholder="Mobile No">
+                                <label asp-for="tempSellerRegister.Contact">Contact</label>
+                                <input asp-for="tempSellerRegister.Contact" class="form-control">
+                                <span asp-validation-for="tempSellerRegister.Contact"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Password</label>
-                                <input class="form-control" type="text" placeholder="Password">
+                                <label asp-for="tempSellerRegister.Password">Password</label>
+                                <input asp-for="tempSellerRegister.Password" class="form-control">
+                                <span asp-validation-for="tempSellerRegister.Password"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Location</label>
-                                <input class="form-control" type="text" placeholder="Location">
+                                <label asp-for="tempSellerRegister.Location">Location</label>
+                                <input asp-for="tempSellerRegister.Location" class="form-control">
+                                <span asp-validation-for="tempSellerRegister.Location"></span>
                             </div>
+                           
                             <div class="col-md-12">
                                 <button type="submit" class="btn">Submit</button>
                             </div>

@@ -14,6 +14,9 @@ namespace EsyaStore.Pages
 
         public void OnGet()
         {
+            HttpContext.Session.SetString("Login", "0");
+            HttpContext.Session.SetString("Role", "user");
+            HttpContext.Session.SetString("Id", "");
 
         }
     }

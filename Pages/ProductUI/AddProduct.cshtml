@@ -13,33 +13,41 @@
                     <div class="row">
                         <form method="post" enctype="multipart/form-data">
                             <div class="col-md-6">
-                                <label>Product Name</label>
-                                <input class="form-control" type="text" placeholder="Product Name">
+                                <label asp-for="tempAddProduct.ProductName">Product Name</label>
+                                <input asp-for="tempAddProduct.ProductName" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductName"></span>
                             </div>
 
                             <div class="col-md-6">
-                                <label>Product Description</label>
-                                <input class="form-control" type="text" placeholder="Product Description">
+                                <label asp-for="tempAddProduct.ProductDescription">Product Description</label>
+                                <input asp-for="tempAddProduct.ProductDescription" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductDescription"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Price</label>
-                                <input class="form-control" type="number" placeholder="Price">
+                                <label asp-for="tempAddProduct.ProductPrice">Product Price</label>
+                                <input asp-for="tempAddProduct.ProductPrice" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductPrice"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Quantiy Available</label>
-                                <input class="form-control" type="number" placeholder="Quantiy">
+                                <label asp-for="tempAddProduct.ProductQuantity">Product Quantity</label>
+                                <input asp-for="tempAddProduct.ProductQuantity" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductQuantity"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>Category</label>
-                                <input class="form-control" type="text" placeholder="Category">
+                                <label asp-for="tempAddProduct.ProductCategory">Product Category</label>
+                                <input asp-for="tempAddProduct.ProductCategory" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductCategory"></span>
                             </div>
                             <div class="col-md-6">
-                                <label>ManuFacturer</label>
-                                <input class="form-control" type="text" placeholder="ManuFacturer Name">
+                                <label asp-for="tempAddProduct.Manufacturer">Product Manufacturer / Brand</label>
+                                <input asp-for="tempAddProduct.Manufacturer" class="form-control">
+                                <span asp-validation-for="tempAddProduct.Manufacturer"></span>
                             </div>
                             <div class="col-md-6">
-                                <label for="imageUpload">Upload Image</label>
-                                <input type="file" id="imageUpload" name="image" accept="image/*">
+                                <label asp-for="tempAddProduct.ProductImage">Product Img</label>
+                                <input type="file" accept="image/*" asp-for="tempAddProduct.ProductImage" class="form-control">
+                                <span asp-validation-for="tempAddProduct.ProductImage"></span>
+                                    
                             </div>
 
                             <div class="col-md-12">

@@ -449,6 +449,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\ecom\\EsyaStore\\wwwroot\\uploads\\45d41b90-f70c-48c0-9ae2-406372a6450a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\45d41b90-f70c-48c0-9ae2-406372a6450a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ecom\\EsyaStore\\wwwroot\\uploads\\7bf412a7-3f90-4f8a-912d-f5e6d7a498a5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7bf412a7-3f90-4f8a-912d-f5e6d7a498a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ecom\\EsyaStore\\wwwroot\\uploads\\8ed97bc2-c41c-444a-bed4-de908e9d9cd5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\8ed97bc2-c41c-444a-bed4-de908e9d9cd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ecom\\EsyaStore\\wwwroot\\uploads\\a1addcb3-f777-4cc5-91f4-297dbde71037.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a1addcb3-f777-4cc5-91f4-297dbde71037.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EsyaStore.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

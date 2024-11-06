@@ -9,18 +9,20 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="register-form">
-                    <h2>Login</h2>
+                    <h2>User Login</h2>
                     <div class="row">
                         <form method="post">
                             
                             <div class="col-md-6">
-                                <label>E-mail</label>
-                                <input class="form-control" type="text" placeholder="E-mail">
+                                <label asp-for="tempUserLogin.Email">Email</label>
+                                <input asp-for="tempUserLogin.Email" class="form-control">
+                                <span asp-validation-for="tempUserLogin.Email"></span>
                             </div>
                            
                             <div class="col-md-6">
-                                <label>Password</label>
-                                <input class="form-control" type="text" placeholder="Password">
+                                <label asp-for="tempUserLogin.Password">Password</label>
+                                <input asp-for="tempUserLogin.Password" class="form-control">
+                                <span asp-validation-for="tempUserLogin.Password"></span>
                             </div>
                             
                             <div class="col-md-12">
