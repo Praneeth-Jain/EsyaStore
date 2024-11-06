@@ -17,10 +17,15 @@ namespace EsyaStore.Data.Entity
         [Required, MinLength(8)]
         public string Password { get; set; }
 
+        
+        [Required]
         public string Contact { get; set; }
+
 
         public string Location { get; set; }
 
         public int isActiveSeller { get; set; } = 1;
+
+
     }
 }

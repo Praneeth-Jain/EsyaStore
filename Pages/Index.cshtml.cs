@@ -7,6 +7,8 @@ namespace EsyaStore.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public string Id { get; set; }
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -14,6 +16,7 @@ namespace EsyaStore.Pages
 
         public void OnGet()
         {
+            Id = HttpContext.Session.GetString("Id");
 
         }
     }
