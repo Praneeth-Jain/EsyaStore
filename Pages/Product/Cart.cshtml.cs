@@ -34,11 +34,38 @@ namespace EsyaStore.Pages.Product
             _context.SaveChanges();
             return RedirectToPage("/Product/Cart");
         }
-        //public IActionResult OnPostOrder()
-        //{
-        //    var orderno = new Guid().ToString();
+        public IActionResult OnPostOrder()
+        {
+            int usrid = 2;
+            var BuyCartItems = _context.cart.Where(c => c.UserId == usrid).ToList();
 
-        //    return Page();
-        //}
+            if (!BuyCartItems.Any())
+            {
+                return RedirectToPage("/Product/Index");
+            }
+
+            foreach (var item in BuyCartItems) {
+                var BuyProduct = _context.products.Find(item.ProductId);
+                if (BuyProduct == null||BuyProduct.ProductQuantity<1) {
+                    continue;
+                }
+                var newOrder = new Order
+                {
+                    OrderNo = Guid.NewGuid().ToString(),
+                    UserId = item.UserId,
+                    ProductId = item.ProductId,
+                };
+                _context.orders.Add(newOrder);
+
+                BuyProduct.ProductQuantity -= 1;
+                _context.products.Update(BuyProduct);
+
+                _context.cart.Remove(item);
+            }
+            _context.SaveChanges();
+
+
+            return RedirectToPage("/Product/Order");
+        }
     }
 }

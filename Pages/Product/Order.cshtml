@@ -1,0 +1,46 @@
+﻿@page
+@model EsyaStore.Pages.Product.OrderModel
+@{
+}
+
+<div class="container">
+
+    <h2>Your Orders</h2>
+
+    @if (Model.userOrders.Any())
+    {
+        <div class="row">
+            @foreach (var order in Model.userOrders)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="~/uploads/@order.ProductImage" alt="@order.ProductName" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">@order.ProductName</h5>
+                            <p class="card-text">
+                                <strong>Order No:</strong> @order.OrderNo <br />
+                                <strong>Order Date:</strong> @order.OrderDate.ToString("yyyy-MM-dd") <br />
+                                <strong>Order Time:</strong> @order.OrderDate.ToString("HH:mm:ss")
+                            </p>
+                            @if (order.OrderStatus == 0)
+                            {
+                                <span class="badge bg-danger">Cancelled</span>
+                            }
+                            else
+                            {
+                                <form method="post" asp-page-handler="CancelOrder">
+                                    <input type="hidden" name="orderId" value="@order.OrderId" />
+                                    <button type="submit" class="btn btn-danger">Cancel Order</button>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>You have no orders.</p>
+    }
+</div>
