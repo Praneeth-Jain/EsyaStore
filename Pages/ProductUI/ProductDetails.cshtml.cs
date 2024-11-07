@@ -17,13 +17,21 @@ namespace EsyaStore.Pages.ProductUI
             _context = context;
         }
 
-        public void OnGet(int productId)
+        public IActionResult OnGet(int productId)
         {
+            Console.WriteLine($"The value of the login is {HttpContext.Session.GetString("Login")}");
+
+            if (HttpContext.Session.GetString("Login") == "0")
+            {
+               return RedirectToPage("../UserUI/UserLogin");
+            }
+
             Console.WriteLine(productId);
             ProductDetails = _context.products.Where(Users => Users.Id == productId).FirstOrDefault();
 
             listOfProducts = _context.products.ToList();
             
+            return Page();
         }
     }
 }

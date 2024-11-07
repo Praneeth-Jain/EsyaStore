@@ -7,9 +7,9 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-3">
-                <div class="logo">
+                <div>
                     <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
+                        <img height="80px" width="80px" src="~/img/logo.png" alt="Logo">
                     </a>
                 </div>
             </div>
@@ -19,17 +19,7 @@
                     <button><i class="fa fa-search"></i></button>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="user">
-                    <a href="wishlist.html" class="btn wishlist">
-                        <i class="fa fa-heart"></i>
-                        <span>(0)</span>
-                    </a>
-                    <a href="cart.html" class="btn cart">
-                        <i class="fa fa-shopping-cart"></i>
-                        <span>(0)</span>
-                    </a>
-                </div>
+            
             </div>
         </div>
     </div>
@@ -46,67 +36,72 @@
                             <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                            <a class="nav-link" asp-page ="../ProductUI/ProductList"><i class="fa fa-shopping-bag"></i>Best Selling</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-plus-square"></i>New Arrivals</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-female"></i>Fashion & Beauty</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
+                            <a class="nav-link" asp-page="../ProductUI/ProductList"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="col-md-6">
                 <div class="header-slider normal-slider">
-                    <div class="header-slider-item">
-                       <img src="/img/slider-1.jpg"/>
-                        
-                        <div class="header-slider-caption">
-                            <p>Some text goes here that describes the image</p>
-                            <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                    <div class="header-slider-item" style="position: relative; text-align: center;">
+                        <img src="@Model.listOf3[0].ProdImgUrl" alt="Product Image" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;" />
+
+                        <div class="header-slider-caption" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white;">
+                            <p>@Model.listOf3[0].ProductDescription</p>
+                            <a class="btn" asp-page="../ProductUI/ProductDetails" asp-route-productId="@Model.listOf3[0].Id"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
-                    <div class="header-slider-item">
-                        <img src="/img/slider-2.jpg" alt="Slider Image" />
-                        <div class="header-slider-caption">
-                            <p>Some text goes here that describes the image</p>
-                            <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+
+                    <div class="header-slider-item" style="position: relative; text-align: center;">
+                        <img src="@Model.listOf3[1].ProdImgUrl" alt="Product Image" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;" />
+
+                        <div class="header-slider-caption" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white;">
+                            <p>@Model.listOf3[1].ProductDescription</p>
+                            <a class="btn" asp-page="../ProductUI/ProductDetails" asp-route-productId="@Model.listOf3[1].Id"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
-                    <div class="header-slider-item">
-                        <img src="/img/slider-3.jpg" alt="Slider Image" />
-                        <div class="header-slider-caption">
-                            <p>Some text goes here that describes the image</p>
-                            <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+
+                    <div class="header-slider-item" style="position: relative; text-align: center;">
+                        <img src="@Model.listOf3[2].ProdImgUrl" alt="Product Image" style="max-width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;" />
+
+                        <div class="header-slider-caption" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white;">
+                            <p>@Model.listOf3[2].ProductDescription</p>
+                            <a class="btn" asp-page="../ProductUI/ProductDetails" asp-route-productId="@Model.listOf3[2].Id"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="header-img">
                     <div class="img-item">
-                        <img src="img/category-1.jpg" />
+                        <img src="https://cdn.prod.website-files.com/6502fd58f151227f8e82e9d2/654cbdbdde48adb85efd982f_Faecbook-ads-for-ecommerce2.jpeg" />
                         <a class="img-text" href="">
-                            <p>Some text goes here that describes the image</p>
+                            <p>Popular amoung all Social Media!</p>
                         </a>
                     </div>
                     <div class="img-item">
-                        <img src="img/category-2.jpg" />
+                        <img src="https://assets-static.invideo.io/images/large/230_Facebook_Ads_for_E_commerce_1a88f8174c.png" />
                         <a class="img-text" href="">
-                            <p>Some text goes here that describes the image</p>
+                            <p>Order At Your Home Comfort!</p>
                         </a>
                     </div>
                 </div>

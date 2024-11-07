@@ -33,6 +33,10 @@ namespace EsyaStore.Pages.UserUI
                 return RedirectToPage("UserLogin");
             }
 
+            HttpContext.Session.SetString("Role", "User");
+            HttpContext.Session.SetString("Login", "1");
+            HttpContext.Session.SetString("Id", $"{user.Id}");
+
             return RedirectToPage("../EcomUI/Homepage");
         }
     }

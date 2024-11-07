@@ -18,9 +18,16 @@ namespace EsyaStore.Pages.SellerUI
             _context = context;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            listOfOrders = _context.orders.ToList();
+            if(HttpContext.Session.GetString("Role") != "Seller")
+            {
+                return RedirectToPage("SellerLogin");
+            }
+
+            int id = int.Parse(HttpContext.Session.GetString("Id"));
+
+            listOfOrders = _context.orders.Where(e => e.Id == id).ToList();
 
             foreach (var o in listOfOrders)
             {
@@ -28,7 +35,7 @@ namespace EsyaStore.Pages.SellerUI
                 listOfProducts = _context.products.Where(e=> e.Id == o.ProductId).ToList();
 
             }
-
+            return Page();  
 
         }
     }

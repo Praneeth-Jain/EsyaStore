@@ -17,9 +17,13 @@ namespace EsyaStore.Pages.ProductUI
         {
             _context = context;
         }
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            
+            if(HttpContext.Session.GetString("Role") != "Seller")
+            {
+                return RedirectToPage("../SellerUI/SellerLogin");
+            }
+            return Page();
         }
 
         public async Task<IActionResult> OnPostAsync()

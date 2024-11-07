@@ -35,6 +35,7 @@ namespace EsyaStore.Pages.UserUI
                 Contact = tempUserRegistration.Contect
             };
 
+
             _context.users.Add(user);
             _context.SaveChanges();
 

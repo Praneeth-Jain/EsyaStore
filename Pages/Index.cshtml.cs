@@ -12,12 +12,16 @@ namespace EsyaStore.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            HttpContext.Session.SetString("Login", "0");
-            HttpContext.Session.SetString("Role", "user");
-            HttpContext.Session.SetString("Id", "");
 
+            HttpContext.Session.SetString("Login", "0");
+            HttpContext.Session.SetString("Role", "User");
+            HttpContext.Session.SetString("Id", "0");
+
+            Console.WriteLine($"The value of the login is set to {HttpContext.Session.GetString("Login")}");
+
+            return RedirectToPage("/EcomUI/Homepage");
         }
     }
 }

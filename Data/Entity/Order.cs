@@ -7,8 +7,6 @@ namespace EsyaStore.Data.Entity
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        public string OrderNo { get; set; }
 
         [Required]
         public int UserId { get; set; }
@@ -18,7 +16,15 @@ namespace EsyaStore.Data.Entity
 
         public DateTime OrderDate { get; set; }= DateTime.Now;
 
-        public int OrderStatus { get; set; } = 1;
+        public int OrderStatus { get; set; } = 1;   
+
+        public string Address { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public int ZIPCode { get; set; }
 
     }
 }

@@ -26,6 +26,7 @@ namespace EsyaStore.Pages.ProductUI
 
         public void OnGet(string category)
         {
+           
 
             // If a category is passed as a query parameter, filter the products by category
             if (!string.IsNullOrEmpty(category))
