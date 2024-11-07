@@ -1,5 +1,6 @@
 using EsyaStore.Data.Context;
 using EsyaStore.Data.Entity;
+using EsyaStore.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -8,9 +9,10 @@ namespace EsyaStore.Pages.Product
     public class CartModel : PageModel
     {
     private readonly ApplicationDbContext _context;
-        public List<dynamic> CartProducts { get; set; } = new List<dynamic>();
+        public List<CartViewModel> CartProducts { get; set; } = new List<CartViewModel>();
         public Cart DeleteCart { get; set; }
 
+        public string UserRole { get; set; }
 
         public CartModel(ApplicationDbContext context)
         {
@@ -18,14 +20,25 @@ namespace EsyaStore.Pages.Product
         }
         public void OnGet()
         {
-            CartProducts = (from cart in _context.cart
-                            join product in _context.products on cart.ProductId equals product.Id
-                            where cart.UserId == 2
-                            select  new
-                            {
-                                Product = product,
-                                CartId = cart.CartId
-                            }).ToList<dynamic>();
+            UserRole = HttpContext.Session.GetString("UserRole");
+            if (UserRole != "User") {
+                Response.Redirect("/User/Login");
+                return;
+            }
+
+            var usrId = HttpContext.Session.GetInt32("Id");
+
+            {
+                CartProducts = (from cart in _context.cart
+                                join product in _context.products on cart.ProductId equals product.Id
+                                where cart.UserId == usrId
+                                select new CartViewModel
+                                {
+                                    Product = product,
+                                    CartId = cart.CartId
+                                }).ToList();
+            }
+            
         }
         public IActionResult OnPostDeleteFromCart(int? Cartid)
         {
@@ -36,7 +49,7 @@ namespace EsyaStore.Pages.Product
         }
         public IActionResult OnPostOrder()
         {
-            int usrid = 2;
+            var usrid = HttpContext.Session.GetInt32("Id");
             var BuyCartItems = _context.cart.Where(c => c.UserId == usrid).ToList();
 
             if (!BuyCartItems.Any())

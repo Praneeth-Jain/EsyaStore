@@ -12,6 +12,7 @@ namespace EsyaStore.Pages.Product
         private readonly ApplicationDbContext _context;
         public List<OrderViewModel> userOrders { get; set; }=new List<OrderViewModel>();
 
+        public string UserRole { get; set; }
         public OrderModel(ApplicationDbContext context)
         {
             _context = context;
@@ -19,9 +20,15 @@ namespace EsyaStore.Pages.Product
 
         public void OnGet()
         {
+            UserRole = HttpContext.Session.GetString("UserRole");
+            if (UserRole != "User")
+            {
+                RedirectToPage("User/Login");
+            }
+            var userid = HttpContext.Session.GetInt32("Id");
             userOrders = (from order in _context.orders
                           join product in _context.products on order.ProductId equals product.Id
-                          where order.UserId == 2
+                          where order.UserId == userid
                           select new OrderViewModel
                           {
                               OrderId = order.Id,

@@ -5,6 +5,16 @@
 <h1>My Cart</h1>
 <div class="container">
     @{
+            if (Model.CartProducts == null)
+            {
+                <p class="text-danger">No Items in Cart </p>
+                <button class="btn-primary ">
+                    <a class="text-decoration-none text-light" asp-page="/Product/Index">Check Products</a>
+                </button>
+            }
+            else
+            {
+                
 
         foreach(var prods in Model.CartProducts)
         {   
@@ -23,11 +33,17 @@
         <p class="card-title">@prods.Product.ProductName</p>
         <p class="card-text">@prods.Product.ProductPrice</p>
         </div>
-        </div>
+        </div> 
     </div>
-        }
         <form method="post" asp-page-handler="Order">
         <input type="submit"  value="Buy Now" class="btn btn-primary" />
         </form>
-    }
+        
+        
+        }
+            
+        }
+            }
+            
+    
 </div>
