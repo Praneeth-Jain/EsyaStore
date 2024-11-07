@@ -8,7 +8,7 @@ namespace EsyaStore.Pages.Seller
         public IActionResult OnGet()
         {
             HttpContext.Session.Clear();
-            return RedirectToPage("/Seller/Signup");
+            return RedirectToPage("/Seller/SellerSignup");
         }
     }
 }
