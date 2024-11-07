@@ -12,9 +12,9 @@ namespace EsyaStore.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            return RedirectToPage("User/Login");
         }
     }
 }
