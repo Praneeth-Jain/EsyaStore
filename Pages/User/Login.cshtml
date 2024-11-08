@@ -3,20 +3,32 @@
 @{
 }
 
-<div>
-    <h1>Login Page</h1>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg border-0" style="background-color: #f8f9fa;">
+                <div class="card-header text-center" style="background-color: #343a40; color: #ffffff;">
+                    <h2>Login</h2>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label class="form-label fw-bold" asp-for="user.Email" style="color: #343a40;">Email</label>
+                            <input class="form-control" asp-for="user.Email" placeholder="Enter your email" style="background-color: #ffffff; border-color: #ced4da;" />
+                            <span asp-validation-for="user.Email" class="text-danger small"></span>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="form-label fw-bold" asp-for="user.Password" style="color: #343a40;">Password</label>
+                            <input type="password" class="form-control" asp-for="user.Password" placeholder="Enter your password" style="background-color: #ffffff; border-color: #ced4da;" />
+                            <span asp-validation-for="user.Password" class="text-danger small"></span>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-dark btn-lg" style="background-color: #28a745; border-color: #28a745;">Login</button>
+                            <a class="btn btn-outline-secondary btn-lg" asp-page="/User/register" style="border-color: #6c757d;">Register</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<form method="post">
-    <div class="form-group">
-        <label class="control-label" asp-for="user.Email">Email</label>
-        <input class="form-control" asp-for="user.Email" />
-        <span asp-validation-for="user.Email" class="bg-danger text-light"></span>
-    </div>
-    <div class="form-group">
-        <label class="control-label" asp-for="user.Password">Password</label>
-        <input class="form-control" asp-for="user.Password" />
-        <span asp-validation-for="user.Password" class="bg-danger text-light"></span>
-    </div>
-    <input type="submit" class="btn btn-primary mt-3" />
-    <a class="btn btn-primary mt-3" asp-page="/User/register">Register</a>
-</form>

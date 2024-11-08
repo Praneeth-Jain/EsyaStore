@@ -3,37 +3,39 @@
 @{
 }
 
-<div class="container">
-
+<div class="container my-5" style="max-width: 1200px; margin-top: 40px;">
+    <h1 class="mb-4" style="color: #007bff;">Your Orders</h1>
 
     @if (Model.userOrders.Any())
     {
-    <h2>Your Orders</h2>
         <div class="row">
             @foreach (var order in Model.userOrders)
             {
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="~/uploads/@order.ProductImage" alt="@order.ProductName" style="height: 200px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title">@order.ProductName</h5>
-                            <p class="card-text">
-                                <strong>Order No:</strong> @order.OrderNo <br />
-                                <strong>Order Date:</strong> @order.OrderDate.ToString("yyyy-MM-dd") <br />
-                                <strong>Order Time:</strong> @order.OrderDate.ToString("HH:mm:ss")
-                            </p>
-                            @if (order.OrderStatus == 0)
-                            {
-                                <span class="badge bg-danger">Cancelled</span>
-                            }
-                            else
-                            {
-                                <form method="post" asp-page-handler="CancelOrder">
-                                    <input type="hidden" name="orderId" value="@order.OrderId" />
-                                    <button type="submit" class="btn btn-danger">Cancel Order</button>
-                                </form>
-                            }
-                        </div>
+                <div class="col-md-12 mb-4" style="display: flex; align-items: center; border-bottom: 1px solid #e0e0e0; padding-bottom: 20px;">
+
+                    <div class="col-3" style="flex-shrink: 0;">
+                        <img class="card-img-top" src="~/uploads/@order.ProductImage" alt="@order.ProductName" style="height: 200px; width: auto; object-fit: cover; border-radius: 8px;">
+                    </div>
+
+                    <div class="col-9" style="padding-left: 20px;">
+                        <h5 class="card-title" style="color: #007bff; font-weight: bold;">@order.ProductName</h5>
+                        <p class="card-text" style="font-size: 1rem;">
+                            <strong>Order No:</strong> @order.OrderNo <br />
+                            <strong>Order Date:</strong> @order.OrderDate.ToString("yyyy-MM-dd") <br />
+                            <strong>Order Time:</strong> @order.OrderDate.ToString("HH:mm:ss")
+                        </p>
+
+                        @if (order.OrderStatus == 0)
+                        {
+                            <span class="badge" style="background-color: #dc3545; font-size: 0.9rem; padding: 0.4em 0.6em; border-radius: 0.25rem;">Cancelled</span>
+                        }
+                        else
+                        {
+                            <form method="post" asp-page-handler="CancelOrder">
+                                <input type="hidden" name="orderId" value="@order.OrderId" />
+                                <button type="submit" class="btn" style="background-color: #dc3545; color: white; border-radius: 5px; border: none; margin-top: 10px;">Cancel Order</button>
+                            </form>
+                        }
                     </div>
                 </div>
             }
@@ -41,6 +43,9 @@
     }
     else
     {
-        <p>You have no orders.</p>
+        <div class="text-center text-muted mt-5" style="color: #6c757d; font-size: 1.2rem;">
+            <h4 class="display-6" style="font-size: 1.5rem; color: #007bff;">No Orders Yet</h4>
+            <p class="lead" style="font-size: 1rem;">Browse our <a href="~/Product/Index" class="text-decoration-none" style="color: #007bff;">products</a> to place your first order!</p>
+        </div>
     }
 </div>

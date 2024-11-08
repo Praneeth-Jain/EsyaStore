@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\EsyaStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Product.css",
+      "PackagePath": "staticwebassets\\css\\Product.css"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

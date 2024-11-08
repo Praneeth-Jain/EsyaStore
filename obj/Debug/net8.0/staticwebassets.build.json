@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qpbbrsycrjvwVPmsNR6Xgh22hpwZsFjr3aByJnYqoqU=",
+  "Hash": "aMaDrXNbjWRX9v+ApRou5Nq22uNP4lLdnZdPcECUtEo=",
   "Source": "EsyaStore",
   "BasePath": "_content/EsyaStore",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\user\\source\\repos\\EsyaStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EsyaStore.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Product.css",
+      "SourceId": "EsyaStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\",
+      "BasePath": "_content/EsyaStore",
+      "RelativePath": "css/Product.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Product.css"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\site.css",

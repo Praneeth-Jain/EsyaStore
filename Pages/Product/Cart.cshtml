@@ -2,48 +2,50 @@
 @model EsyaStore.Pages.Product.CartModel
 @{
 }
-<h1>My Cart</h1>
-<div class="container">
-    @{
-            if (Model.CartProducts == null)
-            {
-                <p class="text-danger">No Items in Cart </p>
-                <button class="btn-primary ">
-                    <a class="text-decoration-none text-light" asp-page="/Product/Index">Check Products</a>
-                </button>
-            }
-            else
-            {
-                
 
-        foreach(var prods in Model.CartProducts)
-        {   
-        <div class="card d-grid">
-        <div class="row">
-        <div class="col-4">
-                <span class="btn-danger position-absolute top-0 float-end text-center" style="width:30px;">
-                    <form method="post" asp-page-handler="DeleteFromCart">
-                        <input type="hidden" name="cartId" value="@prods.CartId" />
-                        <button type="submit">X</button>
-                    </form>
-                </span>
-        <img class="card-img" src="~/uploads/@prods.Product.ProdImgUrl" alt="Alternate Text" style="height:30vh; width:20vw;" />
+<h1 class="text-center mb-4">My Cart</h1>
+
+<div class="container">
+    @if (Model.CartProducts == null || !Model.CartProducts.Any())
+    {
+        <div class="text-center mt-5">
+            <p class="text-muted fs-4">No items in your cart <span class="fs-3">:(</span></p>
+            <button class="btn btn-primary mt-3">
+                <a class="text-decoration-none text-light" asp-page="/Product/Index">Browse Products</a>
+            </button>
         </div>
-        <div class="col-8"  >
-        <p class="card-title">@prods.Product.ProductName</p>
-        <p class="card-text">@prods.Product.ProductPrice</p>
+    }
+    else
+    {
+        @foreach (var prods in Model.CartProducts)
+        {
+            <div class="card shadow-sm mb-4">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4 position-relative">
+                        <span class="btn-close position-absolute top-0 end-0 m-2 text-danger" aria-label="Remove from cart">
+                            <form method="post" asp-page-handler="DeleteFromCart" class="d-inline">
+                                <input type="hidden" name="cartId" value="@prods.CartId" />
+                                <button type="submit" class="btn btn-link p-0 m-0 text-danger">
+                                    <span class="visually-hidden">Remove</span> X
+                                </button>
+                            </form>
+                        </span>
+                        <img class="img-fluid rounded-start" src="~/uploads/@prods.Product.ProdImgUrl" alt="@prods.Product.ProductName" style="height: 100%; width: 100%;" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@prods.Product.ProductName</h5>
+                            <p class="card-text">Price: <span class="fw-bold">&#8377; @prods.Product.ProductPrice</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <div class="text-end mt-4">
+            <form method="post" asp-page-handler="Order">
+                <input type="submit" value="Buy Now" class="btn btn-success btn-lg px-4" />
+            </form>
         </div>
-        </div> 
-    </div>
-        <form method="post" asp-page-handler="Order">
-        <input type="submit"  value="Buy Now" class="btn btn-primary" />
-        </form>
-        
-        
-        }
-            
-        }
-            }
-            
-    
+    }
 </div>

@@ -20,35 +20,32 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Seller/SellerHome">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Cart">Cart</a>
-                        </li> <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Order">Orders</a>
-                        </li> <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Index">Products</a>
-                        </li> <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/AddProduct">Add Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        </li> <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/User/Logout">LogOut</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Seller/SellerSignout">LogOut</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+
+    <div class="container my-5" style="max-width: 1200px;">
+        <h2 class="mb-4" style="color: #007bff;">Seller Dashboard</h2>
+
+        @RenderBody()
     </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - EsyaStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2024 - EsyaStore - <a asp-area="" asp-page="/Privacy" style="color: #007bff;">Privacy</a>
         </div>
     </footer>
 
