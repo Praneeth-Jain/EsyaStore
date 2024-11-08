@@ -9,83 +9,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EsyaStore
 build_property.RootNamespace = EsyaStore
-build_property.ProjectDir = C:\Users\user\source\repos\EsyaStore\
+build_property.ProjectDir = C:\Users\user\Desktop\User\Completed\EsyaStore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\source\repos\EsyaStore
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\User\Completed\EsyaStore
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Error.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Index.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Privacy.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Product/AddProduct.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Product/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Product/Cart.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Product/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Product/Index.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Product/Order.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Product/Order.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Product/ProductDetails.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Product/ProductDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdFxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Seller/SellerRegister.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Seller/SellerRegister.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFNlbGxlclJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Seller/SellerSignout.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Seller/SellerSignout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFNlbGxlclNpZ25vdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Seller/SellerSignup.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Seller/SellerSignup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFNlbGxlclNpZ251cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/User/Login.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/User/Logout.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/User/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/User/register.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/User/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/_ViewImports.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/_ViewStart.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/source/repos/EsyaStore/Pages/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/User/Completed/EsyaStore/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-t3jbkqhe9s
