@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aMaDrXNbjWRX9v+ApRou5Nq22uNP4lLdnZdPcECUtEo=",
+  "Hash": "EqI2Ia0D1VurZJrFGcRxnQZOQhScWW6EOWSbx42pVPY=",
   "Source": "EsyaStore",
   "BasePath": "_content/EsyaStore",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",
+      "SourceId": "EsyaStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\",
+      "BasePath": "_content/EsyaStore",
+      "RelativePath": "uploads/b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg"
     }
   ]
 }

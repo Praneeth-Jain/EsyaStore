@@ -1,0 +1,44 @@
+﻿@page
+@model EsyaStore.Pages.Seller.SellerhomeModel
+@{
+    ViewData["Title"] = "Seller Home";
+}
+
+<div class="container mt-4">
+    <div class="mb-4 text-center">
+        <h2 style="color: #007bff; font-weight: bold;">Welcome to Seller Dashboard</h2>
+    </div>
+
+    <div class="row">
+        @foreach (var order in Model.orders)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-light" style="border-radius: 8px;">
+                    <img src="~/uploads/@order.ProdImgUrl" class="card-img-top" alt="@order.ProductName" style="border-radius: 8px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #007bff;">@order.ProductName</h5>
+                        <p class="card-text" style="color: #333;">
+                            <strong>Order No:</strong> @order.OrderNo<br />
+                            <strong>Order Date:</strong> @order.OrderDate.ToString("dd-MM-yyyy")<br />
+                            <strong>User Name:</strong> @order.UserName<br />
+                            <strong>Email:</strong> @order.UserEmail<br />
+                            <strong>Price:</strong> @order.ProductPrice.ToString("C")<br />
+                            <strong>Category:</strong> @order.ProductCategory<br />
+                            <strong>Manufacturer:</strong> @order.Manufacturer
+                        </p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        <small>Order Status: @(order.OrderStatus == 1 ? "Pending" : "Completed")</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-page="/Product/AddProduct" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Add More Products</a>
+    </div>
+</div>
+

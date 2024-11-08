@@ -23,6 +23,12 @@ namespace EsyaStore.Pages.Product
 
         public void OnGet()
         {
+            var Role = HttpContext.Session.GetString("UserRole");
+            if (Role != "Seller")
+            {
+                Response.Redirect("/Seller/SellerSignup");
+                return;
+            }
         }
 
         public IActionResult OnPostAddProduct() {
@@ -30,6 +36,7 @@ namespace EsyaStore.Pages.Product
             {
                 return Page();
             }
+            var SellerID = (int)HttpContext.Session.GetInt32("SellerId");
             var filename = Guid.NewGuid().ToString() + Path.GetExtension(Addproduct.ProductImg.FileName);
             var filepath = Path.Combine(_env.WebRootPath, "uploads", filename);
             var filestream = new FileStream(filepath, FileMode.Create);
@@ -42,12 +49,13 @@ namespace EsyaStore.Pages.Product
                 ProductPrice = Addproduct.ProductPrice,
                 ProductQuantity = Addproduct.ProductQuantity,
                 Manufacturer=Addproduct.Manufacturer,
-                ProdImgUrl = filename
+                ProdImgUrl = filename,
+                SellerId=SellerID
             };
             _context.products.Add(newProd);
             _context.SaveChanges();
             TempData["ProductsMsg"] = "Product Added Successfully";
-            return RedirectToPage("/Product/Index");
+            return RedirectToPage("/Seller/SellerHome");
         }
     }
 }

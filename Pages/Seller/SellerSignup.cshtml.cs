@@ -36,11 +36,11 @@ namespace EsyaStore.Pages
             if (getSellers != null)
             {
                 HttpContext.Session.SetString("UserRole", "Seller");
-                HttpContext.Session.SetString("Id", getSellers.Id.ToString());
+                HttpContext.Session.SetInt32("SellerId", getSellers.Id);
                 TempData["Message"] = "Login Success";
                 TempData["link"] = "/Index";
-                //TempData["isLogin"] = "True";
-                return RedirectToPage("../Index");
+              
+                return RedirectToPage("/Seller/SellerHome");
             }
             else
             {

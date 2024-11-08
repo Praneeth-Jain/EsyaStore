@@ -1,46 +1,45 @@
-﻿@page 
+﻿@page
 @model EsyaStore.Pages.SellerRegisterModel
 @{
 }
 
-<h2>Seller Registration</h2>
+<div class="container my-5" style="max-width: 800px;">
+    <h2 class="mb-4" style="color: #007bff;">Seller Registration</h2>
 
-<form method="post" enctype="multipart/form-data" >
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
 
-    <div class="form-group">
-        <label asp-for="RegistredSeller.Name" class="control-label"></label>
-        <input asp-for="RegistredSeller.Name" class="form-control" />
-        <span asp-validation-for="RegistredSeller.Name" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="RegistredSeller.Name" class="control-label"></label>
+            <input asp-for="RegistredSeller.Name" class="form-control" />
+            <span asp-validation-for="RegistredSeller.Name" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label asp-for="RegistredSeller.Email" class="control-label"></label>
-        <input asp-for="RegistredSeller.Email" class="form-control" />
-        <span asp-validation-for="RegistredSeller.Email" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="RegistredSeller.Email" class="control-label"></label>
+            <input asp-for="RegistredSeller.Email" class="form-control" />
+            <span asp-validation-for="RegistredSeller.Email" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label asp-for="RegistredSeller.Password" class="control-label"></label>
-        <input asp-for="RegistredSeller.Password" class="form-control" type="password />
-        <span asp-validation-for="RegistredSeller.Password" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="RegistredSeller.Password" class="control-label"></label>
+            <input asp-for="RegistredSeller.Password" class="form-control" type="password" />
+            <span asp-validation-for="RegistredSeller.Password" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label asp-for="RegistredSeller.Contact" class="control-label"></label>
-        <input asp-for="RegistredSeller.Contact" class="form-control"  />
-        <span asp-validation-for="RegistredSeller.Contact" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="RegistredSeller.Contact" class="control-label"></label>
+            <input asp-for="RegistredSeller.Contact" class="form-control" />
+            <span asp-validation-for="RegistredSeller.Contact" class="text-danger"></span>
+        </div>
 
-    <div class="form-group">
-        <label asp-for="RegistredSeller.Location" class="control-label"></label>
-        <input asp-for="RegistredSeller.Location" class="form-control"  />
-        <span asp-validation-for="RegistredSeller.Location" class="text-danger"></span>
-    </div>
+        <div class="form-group mb-3">
+            <label asp-for="RegistredSeller.Location" class="control-label"></label>
+            <input asp-for="RegistredSeller.Location" class="form-control" />
+            <span asp-validation-for="RegistredSeller.Location" class="text-danger"></span>
+        </div>
 
-     
-
- 
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
+        <button type="submit" class="btn btn-primary" style="background-color: #007bff;">Register</button>
+    </form>
+</div>
 

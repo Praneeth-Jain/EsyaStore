@@ -38,8 +38,7 @@ namespace EsyaStore.Pages
             {
                 HttpContext.Session.SetString("UserRole", "User");
                 HttpContext.Session.SetInt32("Id", getUsers.Id);
-                
-
+                TempData["IsLoggedIn"] = "True";
                 return RedirectToPage("../Product/Index");
             }
             else { return Page(); } 

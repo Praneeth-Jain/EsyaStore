@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EsyaStore.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
