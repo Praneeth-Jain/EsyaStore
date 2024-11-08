@@ -7,11 +7,10 @@
         public DateTime OrderDate { get; set; }
         public int OrderStatus { get; set; }
 
-        // User-related information
+        
         public int UserId { get; set; }
-        public string UserName { get; set; } // Assuming you fetch the user's name in the controller
+        public string UserName { get; set; } 
 
-        // Product-related information
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }

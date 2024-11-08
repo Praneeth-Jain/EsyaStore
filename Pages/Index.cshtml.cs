@@ -18,6 +18,11 @@ namespace EsyaStore.Pages
         {
             Id = HttpContext.Session.GetString("Id");
 
+            var admin = HttpContext.Session.GetString("UserRole");
+            Console.WriteLine(admin);
+            
+
+
         }
     }
 }
