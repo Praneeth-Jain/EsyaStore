@@ -1,0 +1,38 @@
+﻿@page
+@model EsyaStore.Pages.Seller.SellerhomeModel
+@{
+}
+
+<div>
+    <h2>
+        Seller Home Page
+    </h2>
+</div>
+
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var order in Model.orders)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="@order.ProdImgUrl" class="card-img-top" alt="@order.ProductName">
+                    <div class="card-body">
+                        <h5 class="card-title">@order.ProductName</h5>
+                        <p class="card-text">
+                            <strong>Order No:</strong> @order.OrderNo<br />
+                            <strong>Order Date:</strong> @order.OrderDate.ToString("dd-MM-yyyy")<br />
+                            <strong>Description:</strong> @order.ProductDescription<br />
+                            <strong>Price:</strong> @order.ProductPrice.ToString("C")<br />
+                            <strong>Category:</strong> @order.ProductCategory<br />
+                            <strong>Manufacturer:</strong> @order.Manufacturer
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <small>Order Status: @(order.OrderStatus == 1 ? "Pending" : "Completed")</small>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

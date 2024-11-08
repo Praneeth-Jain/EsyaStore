@@ -40,7 +40,7 @@ namespace EsyaStore.Pages
                 TempData["Message"] = "Login Success";
                 TempData["link"] = "/Index";
                 //TempData["isLogin"] = "True";
-                return RedirectToPage("../Index");
+                return RedirectToPage("/Seller/Sellerhome");
             }
             else
             {
