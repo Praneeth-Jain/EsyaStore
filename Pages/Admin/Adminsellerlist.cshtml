@@ -1,0 +1,48 @@
+﻿@page
+@model EsyaStore.Pages.Admin.AdminsellerlistModel
+@{
+}
+
+
+<div>
+    <h1>Seller List</h1>
+</div>
+
+<!-- Loop through each user in UsersList -->
+@foreach (var seller in Model.SellersList)
+{
+    <div class="card mb-4 shadow" style="max-width: 600px; margin: auto;">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <!-- User Details -->
+                    <h5 class="card-title">@seller.Name</h5>
+                    <p class="card-text mb-1"><strong>Email:</strong> @seller.Email</p>
+
+                    <!-- Status and Actions -->
+                    <div class="d-flex align-items-center">
+                        <!-- Status Label -->
+                        @if (seller.isActiveSeller == 1)
+                        {
+                            <span class="badge bg-success text-light me-2">Active</span>
+                            <button class="btn btn-danger btn-sm me-2">
+                                <a class="text-light text-decoration-none" asp-route-id="@seller.Id" asp-route-status="@seller.isActiveSeller" asp-page="/Admin/Adminsellerlist" asp-page-handler="Status">Disable</a>
+                            </button>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger text-light me-2">Inactive</span>
+                            <button class="btn btn-success btn-sm me-2">
+                                <a class="text-light text-decoration-none" asp-route-id="@seller.Id" asp-route-status="@seller.isActiveSeller" asp-page="/Admin/Adminsellerlist" asp-page-handler="Status">Enable</a>
+                            </button>
+                        }
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
