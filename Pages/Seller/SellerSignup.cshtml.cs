@@ -18,6 +18,7 @@ namespace EsyaStore.Pages
 
         [BindProperty]
         public SignupModelClass seller { get; set; }
+        public string ErrorMessage { get; set; }
         public void OnGet()
         {
             Console.WriteLine(TempData["Message"]);
@@ -44,6 +45,7 @@ namespace EsyaStore.Pages
             }
             else
             {
+                ErrorMessage = "Invalid username or password.";
                 return Page();
             }
         }

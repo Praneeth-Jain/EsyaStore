@@ -18,7 +18,7 @@ namespace EsyaStore.Pages
         [BindProperty]
 
         public userloginModelClass user { get; set; }
-
+        public string ErrorMessage { get; set; }
         public void OnGet()
         {
 
@@ -41,7 +41,10 @@ namespace EsyaStore.Pages
                 TempData["IsLoggedIn"] = "True";
                 return RedirectToPage("../Product/Index");
             }
-            else { return Page(); } 
+            else {
+                ErrorMessage = "Invalid username or password.";
+                return Page(); 
+            } 
         }
     }
 }

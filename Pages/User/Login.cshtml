@@ -10,6 +10,10 @@
                 <div class="card-header text-center" style="background-color: #343a40; color: #ffffff;">
                     <h2>Login</h2>
                 </div>
+                @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                {
+                    <div class="alert alert-danger">@Model.ErrorMessage</div>
+                }
                 <div class="card-body">
                     <form method="post">
                         <div class="form-group mb-3">

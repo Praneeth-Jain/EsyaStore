@@ -27,7 +27,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Seller/SellerSignup">Seller Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/Login">Admin Login</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/AdminLogin">Admin Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Product/Index">Products</a>
@@ -35,20 +35,17 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                        @{
-                            if (TempData["IsLoggedIn"] != null)
-                            {
+                            
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/User/Logout">Logout</a>
                                 </li>
-                            }
-                            else
-                            {
+                            
+                            
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-page="/User/Login">Login</a>
                                 </li>
-                            }
-                        }
+                            
+                        
                                 
                             
                           
