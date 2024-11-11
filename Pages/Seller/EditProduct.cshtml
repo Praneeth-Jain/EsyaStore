@@ -1,0 +1,57 @@
+﻿@page
+@model EsyaStore.Pages.Seller.EditProductModel
+@{
+}
+
+
+<div class="container">
+    <h1>Add Products</h1>
+
+
+    <form method="post" asp-page-handler="EditPage" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <input type="hidden" asp-for="SelectedProduct.Id" />
+
+        <div class="form-group">
+            <label asp-for="SelectedProduct.ProductName" class="control-label">Product Name :</label>
+            <input asp-for="SelectedProduct.ProductName" class="form-control" />
+            <span asp-validation-for="SelectedProduct.ProductName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SelectedProduct.ProductPrice" class="control-label">Product Price</label>
+            <input asp-for="SelectedProduct.ProductPrice" class="form-control" />
+            <span asp-validation-for="SelectedProduct.ProductPrice" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SelectedProduct.ProductCategory" class="control-label">Product Category:</label>
+            <input asp-for="SelectedProduct.ProductCategory" class="form-control" />
+            <span asp-validation-for="SelectedProduct.ProductCategory" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SelectedProduct.Manufacturer" class="control-label">Product Manufacturer:</label>
+            <input asp-for="SelectedProduct.Manufacturer" class="form-control" />
+            <span asp-validation-for="SelectedProduct.Manufacturer" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SelectedProduct.ProductDescription" class="control-label">Product Description:</label>
+            <input asp-for="SelectedProduct.ProductDescription" class="form-control" />
+            <span asp-validation-for="SelectedProduct.ProductDescription" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SelectedProduct.ProductQuantity" class="control-label">Product Quantity</label>
+            <input asp-for="SelectedProduct.ProductQuantity" class="form-control" />
+            <span asp-validation-for="SelectedProduct.ProductQuantity" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.NewImage" class="control-label">Product Image</label>
+            <input type="file" asp-for="@Model.NewImage" class="form-control" />
+        </div>
+
+        <button class="btn btn-primary mt-4">Add Product</button>
+    </form>
+
+</div>
