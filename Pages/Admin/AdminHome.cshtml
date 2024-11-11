@@ -1,0 +1,73 @@
+﻿@page
+@model EsyaStore.Pages.Admin.AdminHomeModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="statistics-dashboard container my-5">
+    <h2 class="text-center mb-4">Dashboard Statistics</h2>
+    <div class="row">
+        
+       
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card statistic-card shadow-sm">
+                <div class="card-body d-flex align-items-center">
+                    <div class="stat-icon bg-primary text-white p-3 rounded-circle">
+                        <i class="fas fa-box"></i> 
+                    </div>
+                    <div class="ml-3">
+                        <h5>Total Orders</h5>
+                        <h3>@Model.Count</h3> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center bg-light">
+            <button class="btn-primary h-75">
+                <a class="text-decoration-none text-light" asp-page="/Admin/Adminuserlist">Browse Users</a>
+            </button>
+        </div>
+        <div class="col-md-4 mb-4 d-flex justify-content-center align-items-center bg-light">
+            <button class="btn-primary h-75">
+                <a class="text-decoration-none text-light" asp-page="/Admin/Adminsellerlist">Browse Sellers</a>
+            </button>
+        </div>
+
+
+        
+
+    <section class="top-selling-products my-5">
+        <h2 class="text-center mb-4">Top Selling Products</h2>
+        <div class="row">
+            @foreach (var product in Model.TopProducts)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5>@product.ProductName</h5>
+                            <p>Sales Count: @product.SalesCount</p>  
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+    <section class="top-selling-products my-5">
+        <h2 class="text-center mb-4">Top Products in Cart</h2>
+        <div class="row">
+            @foreach (var product in Model.CartProds)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5>@product.ProductNAme</h5>
+                            <p>Total Cart Count: @product.Count</p>  
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+</section>

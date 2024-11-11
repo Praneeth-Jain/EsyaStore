@@ -1,0 +1,227 @@
+﻿/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header (Navbar) Styling */
+.header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar-brand .logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+    .navbar-links ul li {
+        margin: 0 20px;
+    }
+
+        .navbar-links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+            .navbar-links ul li a:hover {
+                color: #27ae60;
+            }
+
+/* Hamburger Menu for Mobile */
+.navbar-toggle {
+    display: none;
+}
+
+    .navbar-toggle .toggle-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 30px;
+        height: 25px;
+    }
+
+    .navbar-toggle .bar {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+    }
+
+/* Hero Section Styling */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('/img/hero-banner.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #1d6d3e;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+    .hero-content .btn:hover {
+        background-color: #185b30;
+    }
+
+/* Categories Section Styling */
+.categories {
+    padding: 3rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.category-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+    .category-card:hover {
+        transform: scale(1.05);
+    }
+
+    .category-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .category-card h3 {
+        padding: 1rem;
+        background-color: #1d6d3e;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+    }
+
+/* About Us Section Styling */
+.about-us {
+    padding: 2rem;
+    text-align: center;
+}
+
+    .about-us h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #1d6d3e;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+/* Testimonials Section Styling */
+.testimonials {
+    padding: 3rem;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.testimonial-item {
+    max-width: 300px;
+    margin: 0 1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    transform: scale(0.95);
+    transition: transform 0.3s;
+}
+
+    .testimonial-item:hover {
+        transform: scale(1);
+    }
+
+    .testimonial-item p {
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+    .testimonial-item h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+/* Footer Section Styling */
+.footer {
+    background-color: #1d6d3e;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 1rem;
+}
+
+    .social-media a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration

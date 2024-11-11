@@ -7,20 +7,16 @@
     <h1>User List</h1>
 </div>
 
-<!-- Loop through each user in UsersList -->
 @foreach (var user in Model.UsersList)
 {
     <div class="card mb-4 shadow" style="max-width: 600px; margin: auto;">
         <div class="row g-0">
             <div class="col-md-8">
                 <div class="card-body">
-                    <!-- User Details -->
                     <h5 class="card-title">@user.Name</h5>
                     <p class="card-text mb-1"><strong>Email:</strong> @user.Email</p>
 
-                    <!-- Status and Actions -->
                     <div class="d-flex align-items-center">
-                        <!-- Status Label -->
                         @if (user.isActiveUser == 1)
                         {
                             <span class="badge bg-success text-light me-2">Active</span>

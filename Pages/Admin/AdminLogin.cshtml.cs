@@ -28,7 +28,7 @@ namespace EsyaStore.Pages
             {
                 HttpContext.Session.SetString("UserRole", "Admin");
                 HttpContext.Session.SetString("AdminUsername", AdminUsername);
-                return RedirectToPage("/Index"); 
+                return RedirectToPage("/Admin/AdminHome"); 
             }
             else
             {

@@ -38,6 +38,7 @@ namespace EsyaStore.Pages.Product
                               OrderDate = order.OrderDate,
                               OrderStatus = order.OrderStatus
                           }).ToList();
+
         }
         public IActionResult OnPostCancelOrder(int orderId)
         {

@@ -1,9 +1,8 @@
-﻿/* Sidebar Styles */
-.sidebar {
+﻿.sidebar {
     min-height: 100vh;
-    background-color: #2C3E50;
+    background-color: #1A242F; 
     padding-top: 20px;
-    border-right: 1px solid #34495E; 
+    border-right: 1px solid #34495E;
 }
 
     .sidebar .nav-link {
@@ -14,14 +13,14 @@
     }
 
         .sidebar .nav-link:hover {
-            background-color: #3498DB; 
+            background-color: #258cfb; 
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
 .banner {
-    background-color: #1abc9c; 
-    color: #ffffff;
+    background-color: #2c3e50; 
+    color: #fff;
     padding: 30px 0;
     text-align: center;
     margin-bottom: 30px;
@@ -47,6 +46,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
     overflow: hidden;
+    background-color: #ecf0f1; 
 }
 
     .product-card:hover {
@@ -64,7 +64,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #f39c12; /* Lively yellow */
+    background-color: #1abc9c; 
     color: #fff;
     padding: 5px 15px;
     border-radius: 5px;
@@ -85,11 +85,11 @@
 }
 
     .delete-btn:hover {
-        background-color: #c0392b; 
+        background-color: #c0392b;
     }
 
 .btn-primary {
-    background-color: #3498DB;
+    background-color: #258cfb; 
     border: none;
     padding: 10px 15px;
     font-size: 16px;
@@ -98,7 +98,7 @@
 }
 
     .btn-primary:hover {
-        background-color: #2980B9;
+        background-color: #1f8be0;
     }
 
 .btn-danger {

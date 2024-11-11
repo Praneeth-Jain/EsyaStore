@@ -6,6 +6,9 @@
 <h1 class="text-center mb-4">My Cart</h1>
 
 <div class="container">
+    <button class="btn-toolbar">
+        <a class="text-dark text-decoration-none" asp-page="/Product/Index">&larr; </a>
+    </button>
     @if (Model.CartProducts == null || !Model.CartProducts.Any())
     {
         <div class="text-center mt-5">

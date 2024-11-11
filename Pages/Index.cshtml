@@ -3,9 +3,71 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-content">
+        <h1>Welcome to EsyaStore</h1>
+        <p>Your one-stop destination for trending products</p>
+        <a asp-page="Product/Index" class="btn btn-success">Shop Now</a>
+    </div>
+</section>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <a asp-page="/Product/Index">Product Page</a>
-</div>
+<section id="categories" class="categories">
+    <h2>Explore Our Categories</h2>
+    <div class="category-list">
+        <div class="category-card">
+            <img src="/img/electronics icon with a green and black theme.png" alt="Category 1">
+            <h3>Electronics</h3>
+        </div>
+        <div class="category-card">
+            <img src="/img/fashion icon with a green and black theme.png" alt="Category 2">
+            <h3>Fashion</h3>
+        </div>
+        <div class="category-card">
+            <img src="/img/home and kitchen icon with a green and black theme.png" alt="Category 3">
+            <h3>Home & Kitchen</h3>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="about-us">
+    <h2>About Us</h2>
+    <p>We provide a wide range of high-quality products to meet all your needs. Shop with us for a seamless experience.</p>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-carousel">
+        <div class="testimonial-item">
+            <p>"EsyaStore has the best products. Great quality and fast delivery!"</p>
+            <h3>Rohan</h3>
+        </div>
+        <div class="testimonial-item">
+            <p>"I love shopping here. Amazing deals and great customer service!"</p>
+            <h3>Tomo</h3>
+        </div>
+        <div class="testimonial-item">
+            <p>"Top-notch products and an excellent shopping experience!"</p>
+            <h3>Kl Rahul</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email to subscribe" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>

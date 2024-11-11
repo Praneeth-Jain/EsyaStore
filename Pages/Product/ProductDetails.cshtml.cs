@@ -39,7 +39,7 @@ namespace EsyaStore.Pages.Product
             }
             var newCart = new Cart
             {
-                ProductId = ProductDetailId ,
+                ProductId = ProductDetailId ,  
                 UserId=cartUsrId
             };
             _context.cart.Add(newCart);

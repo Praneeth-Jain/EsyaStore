@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\EsyaStore.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Landing.css",
+      "PackagePath": "staticwebassets\\css\\Landing.css"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Product.css",
       "PackagePath": "staticwebassets\\css\\Product.css"
     },
@@ -15,6 +19,22 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\electronics icon with a green and black theme.png",
+      "PackagePath": "staticwebassets\\img\\electronics icon with a green and black theme.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\fashion icon with a green and black theme.png",
+      "PackagePath": "staticwebassets\\img\\fashion icon with a green and black theme.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\hero-banner.jpg",
+      "PackagePath": "staticwebassets\\img\\hero-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\home and kitchen icon with a green and black theme.png",
+      "PackagePath": "staticwebassets\\img\\home and kitchen icon with a green and black theme.png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\js\\site.js",
@@ -259,6 +279,10 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
       "PackagePath": "staticwebassets\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\87b32c26-76f9-4858-aa98-49ec49da8eea.jpg",
+      "PackagePath": "staticwebassets\\uploads\\87b32c26-76f9-4858-aa98-49ec49da8eea.jpg"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",

@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark-green fixed-top shadow-sm">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary fs-5" asp-area="" asp-page="/Index">EsyaStore</a>
+                <a class="navbar-brand fw-bold text-light fs-3" asp-area="" asp-page="/Index">EsyaStore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,49 +21,41 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Seller/SellerSignup">Seller Login</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Seller/SellerSignup">Seller Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Admin/AdminLogin">Admin Login</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Admin/AdminLogin">Admin Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Product/Index">Products</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Product/Index">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/User/Logout">Logout</a>
-                                </li>
-                            
-                            
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/User/Login">Login</a>
-                                </li>
-                            
-                        
-                                
-                            
-                          
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-page="/User/Logout">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-page="/User/Login">Login</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container mt-5 pt-4">
+    <div class="container mt-5 pt-5">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="footer border-top text-muted py-3 bg-light">
+    <footer class="footer border-top text-muted py-4 bg-light-green">
         <div class="container text-center">
-            &copy; 2024 - EsyaStore - <a href="#" class="text-primary">Privacy</a>
+            &copy; 2024 - EsyaStore - <a href="#" class="text-dark-green">Privacy</a>
         </div>
     </footer>
 

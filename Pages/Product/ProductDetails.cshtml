@@ -14,18 +14,41 @@
                 <h2 class="fw-bold">@Model.Products.ProductName</h2>
                 <p class="h4 text-primary mt-3">&#8377; @Model.Products.ProductPrice</p>
 
-                <p class="text-muted mt-3"><strong>Category:</strong> @Model.Products.ProductCategory</p>
-                <p class="text-danger"><strong>Only @Model.Products.ProductQuantity Left!</strong></p>
+                @{
+                    if(Model.Products.ProductQuantity>0)
+                    {
+                        
+                 <p class="text-muted mt-3"><strong>Category:</strong> @Model.Products.ProductCategory</p>
+                        <p class="text-danger"><strong>Only @Model.Products.ProductQuantity Left!</strong></p>
+                    }
+                    else
+                    {
+                        <p class="text-muted mt-3"><strong>Category:</strong> @Model.Products.ProductCategory</p>
+                        <p class="text-danger"><strong>Out of Stock !!</strong></p>
+                    }
+
+                    
+                    }
+                    
 
                 <hr />
 
                 <p class="card-text"><strong>Description:</strong> @Model.Products.ProductDescription</p>
                 <p class="card-text"><strong>Manufacturer:</strong> @Model.Products.Manufacturer</p>
+                @{
 
+                if(Model.Products.ProductQuantity>0)
+                {
                 <form method="post" asp-page-handler="AddCart" class="mt-4">
                     <input type="hidden" value="@Model.Products.Id" asp-for="@Model.ProductDetailId" />
                     <button class="btn btn-success btn-lg px-4">Add to Cart</button>
-                </form>
+                        </form>
+                    }
+                    else
+                    {
+                    <button class="btn btn-success btn-lg px-4" style="opacity:40%">Add to Cart</button>
+                    }
+                }
             </div>
         </div>
     </div>

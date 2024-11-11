@@ -1,22 +1,120 @@
+/* Global Font and Body Styling */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333; /* Darker background for navbar */
+    padding: 1.2rem 0; /* Increase navbar height */
+    transition: background-color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1d6d3e; /* Green on Hover */
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    color: #1d6d3e !important; /* Green */
+    font-size: 2.5rem; /* Larger size for the brand name */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: #fff !important;
+    }
+
+/* Footer Styling */
+.footer {
+    background-color: #1d6d3e; /* Green background */
+    color: white;
+    padding: 1.5rem 0; /* Increased padding for a larger footer */
+    text-align: center;
+}
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .footer a:hover {
+            color: #f56a79; /* Highlight color for hover */
+        }
+
+/* Green Background for the Footer */
+.bg-light-green {
+    background-color: #e0f8e0 !important; /* Light green */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #1d6d3e; /* Green */
+    border-color: #1d6d3e;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #185b30; /* Dark Green */
+        border-color: #185b30;
+        transform: scale(1.05);
+    }
+
+.btn-secondary {
+    background-color: #333; /* Dark background for secondary buttons */
+    border-color: #333;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-secondary:hover {
+        background-color: #1f1f1f; /* Slightly darker for hover effect */
+        transform: scale(1.05);
+    }
+
+/* Form Styling */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+    .form-control:focus {
+        border-color: #1d6d3e;
+        box-shadow: 0 0 0 0.25rem rgba(29, 109, 62, 0.25); /* Green focus effect */
+    }
+
+/* Smooth Transitions for Animations */
+.navbar, .footer, .btn, .nav-link {
+    transition: all 0.3s ease;
 }
