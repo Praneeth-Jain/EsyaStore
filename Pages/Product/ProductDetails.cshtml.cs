@@ -28,8 +28,7 @@ namespace EsyaStore.Pages.Product
         public Reviews Review { get; set; } = new Reviews();
         public List<Reviews> ProductReviews { get; set; } = new List<Reviews>();
 
-        [BindProperty]
-        public Products Products { get; set; }
+        public Products Products { get; set; } 
         public ProductDetailsModel(ApplicationDbContext context)
         {
             _context = context;

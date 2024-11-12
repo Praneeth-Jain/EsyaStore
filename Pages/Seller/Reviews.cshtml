@@ -1,0 +1,27 @@
+﻿@page
+@model EsyaStore.Pages.Seller.ReviewsModel
+@{
+}
+
+<div>
+    <h1>
+        Product reviews
+    </h1>
+</div>
+
+<div class="row">
+
+
+    <div class="reviews">
+        @foreach (var review in Model.reviews)
+
+        {
+            <div class="review-item col-4 mb-3 p-3 border rounded">
+                <p class="fw-bold">Rating: @review.Stars / 5</p>
+                <p>@review.ReviewDescription</p>
+                <p class="text-muted">Reviewed on @review.ReviewDate.ToString("MMMM dd, yyyy")</p>
+            </div>
+        }
+    </div>
+
+</div>
