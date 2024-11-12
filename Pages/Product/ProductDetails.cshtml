@@ -49,7 +49,73 @@
                     <button class="btn btn-success btn-lg px-4" style="opacity:40%">Add to Cart</button>
                     }
                 }
+
+
+
+
+                @if (Model.HasPurchased && !Model.HasRevieved)
+
+                {
+                    <hr />
+                    <h4>Leave a Review</h4>
+                    <form method="post" asp-page-handler="Review">
+                        <div class="mb-3">
+                            <label for="Stars" class="form-label">Rating (1 to 5 stars):</label>
+                            <input type="number" class="form-control" asp-for="StarsCount" min="1" max="5" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="ReviewDescription" class="form-label">Review:</label>
+                            <textarea class="form-control" asp-for="ReviewDescription" rows="4" required></textarea>
+                        </div>
+                        <input type="hidden" asp-for="ProductDetailId" value="@Model.Products.Id" />
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                }
+
+                else
+
+                {
+                    if (!Model.HasPurchased)
+                    {
+                        <p class="text-muted">Only users who have purchased this product can leave a review.</p>
+                    }else if (Model.HasRevieved)
+                    {
+                        <p class="text-muted">Thanks For rating :) </p>
+                    }
+                }
+
+                <hr />
+                <h4>Customer Reviews</h4>
+                @if (Model.ProductReviews.Count > 0)
+
+                {
+                    <div class="reviews">
+                        @foreach (var review in Model.ProductReviews)
+
+                        {
+                            <div class="review-item mb-3 p-3 border rounded">
+                                <p class="fw-bold">Rating: @review.Stars / 5</p>
+                                <p>@review.ReviewDescription</p>
+                                <p class="text-muted">Reviewed on @review.ReviewDate.ToString("MMMM dd, yyyy")</p>
+                            </div>
+                        }
+                    </div>
+                }
+
+                else
+
+                {
+                    <p class="text-muted">No reviews yet. Be the first to leave a review!</p>
+                }
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+       

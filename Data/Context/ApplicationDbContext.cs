@@ -18,6 +18,7 @@ namespace EsyaStore.Data.Context
         public DbSet<Order> orders { get; set; }
 
         public DbSet<Cart> cart { get; set; }   
+        public DbSet<Reviews> reviews { get; set; }   
 
     }
 }
