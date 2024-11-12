@@ -13,6 +13,8 @@ namespace EsyaStore.Pages.Product
         public int id { get; set; }
         public List<Products> ProductList { get; set; }
 
+        public decimal AvgRating { get; set; }
+
         public IndexModel (ApplicationDbContext context)
         {
             _context = context;

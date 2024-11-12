@@ -23,7 +23,9 @@
                             <strong>Order Date:</strong> @order.OrderDate.ToString("dd-MM-yyyy")<br />
                             <strong>User Name:</strong> @order.UserName<br />
                             <strong>Email:</strong> @order.UserEmail<br />
-                            <strong>Price:</strong> @order.ProductPrice.ToString("C")<br />
+                            <strong>Amount:</strong> @order.TotalPrice<br />
+                            <strong>Quantity:</strong> @order.Quantity<br />
+                            <strong>Address :</strong> @order.Address<br />
                             <strong>Category:</strong> @order.ProductCategory<br />
                             <strong>Manufacturer:</strong> @order.Manufacturer
                         </p>
@@ -39,6 +41,8 @@
 
     <div class="text-center mt-4">
         <a asp-page="/Product/AddProduct" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Add More Products</a>
+        <a asp-page="/Seller/SellerProducts" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Browse My Products</a>
+    </div>
     </div>
 </div>
 

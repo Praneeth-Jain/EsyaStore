@@ -34,15 +34,26 @@ namespace EsyaStore.Pages
                           .Where(x => x.Email == user.Email && x.Password == user.Password)
                           .FirstOrDefault();
 
-            if (getUsers != null)
+            if (getUsers != null&& getUsers.isActiveUser==1)
             {
                 HttpContext.Session.SetString("UserRole", "User");
                 HttpContext.Session.SetInt32("Id", getUsers.Id);
                 TempData["IsLoggedIn"] = "True";
                 return RedirectToPage("../Product/Index");
             }
-            else {
-                ErrorMessage = "Invalid username or password.";
+            else 
+            {
+                if (getUsers != null)
+                {
+                    if (getUsers.isActiveUser == 0)
+                    {
+                        ErrorMessage = "This account has been suspended by Adminstrator";
+                    }
+                }
+                else
+                {
+                    ErrorMessage = "Invalid username or password.";
+                }
                 return Page(); 
             } 
         }

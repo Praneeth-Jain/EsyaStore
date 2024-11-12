@@ -34,9 +34,11 @@ namespace EsyaStore.Pages.Product
                               OrderId = order.Id,
                               OrderNo=order.OrderNo,
                               ProductName = product.ProductName,
-                              ProductImage = product.ProdImgUrl, // Assuming `ProductImage` is the image URL or path
+                              ProductImage = product.ProdImgUrl, 
                               OrderDate = order.OrderDate,
-                              OrderStatus = order.OrderStatus
+                              OrderStatus = order.OrderStatus,
+                              Quanity=order.Quantity,
+                              Address=order.Address
                           }).ToList();
 
         }

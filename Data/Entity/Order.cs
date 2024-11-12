@@ -20,5 +20,10 @@ namespace EsyaStore.Data.Entity
 
         public int OrderStatus { get; set; } = 1;
 
+        public int Quantity { get; set; } = 1;
+
+        [Required,MaxLength(150)]
+        public string Address { get; set; }
+
     }
 }

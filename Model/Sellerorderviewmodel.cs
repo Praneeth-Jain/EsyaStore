@@ -7,6 +7,12 @@
         public DateTime OrderDate { get; set; }
         public int OrderStatus { get; set; }
 
+        public int Quantity { get; set; }
+
+        public string Address { get; set; }
+
+        public decimal TotalPrice { get; set; }
+
         public int UserId { get; set; }
         public string UserName { get; set; } 
 

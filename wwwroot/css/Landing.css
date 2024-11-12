@@ -109,12 +109,12 @@
         background-color: #185b30;
     }
 
-/* Categories Section Styling */
 .categories {
     padding: 3rem;
     text-align: center;
     background-color: #222;
     color: white;
+    min-height:75vh;
 }
 
 .category-list {
@@ -150,10 +150,11 @@
         font-size: 1.2rem;
     }
 
-/* About Us Section Styling */
 .about-us {
     padding: 2rem;
     text-align: center;
+    min-height:50vh;
+   
 }
 
     .about-us h2 {
@@ -165,20 +166,23 @@
     .about-us p {
         font-size: 1.2rem;
         color: #666;
+        text-align:justify;
+       
     }
 
-/* Testimonials Section Styling */
 .testimonials {
     padding: 3rem;
     background-color: #1f1f1f;
     color: white;
     text-align: center;
+    min-height:50vh;
 }
 
 .testimonial-carousel {
     display: flex;
     overflow: hidden;
     justify-content: center;
+    margin-top:4rem;
 }
 
 .testimonial-item {

@@ -13,13 +13,23 @@
             <div class="col-md-6">
                 <h2 class="fw-bold">@Model.Products.ProductName</h2>
                 <p class="h4 text-primary mt-3">&#8377; @Model.Products.ProductPrice</p>
+                @{
+                    if(@Model.AvgRatings!=null){
+                        <p class="card-text">Avg Rating : @Model.AvgRatings
+                        </p>
+                    }
+                    else
+                    {
+                        <p class="card-text">No Ratings yet !</p>
+                    }
+                }
 
                 @{
                     if(Model.Products.ProductQuantity>0)
                     {
                         
                  <p class="text-muted mt-3"><strong>Category:</strong> @Model.Products.ProductCategory</p>
-                        <p class="text-danger"><strong>Only @Model.Products.ProductQuantity Left!</strong></p>
+                <p class="text-danger"><strong>Only @Model.Products.ProductQuantity Left!</strong></p>
                     }
                     else
                     {

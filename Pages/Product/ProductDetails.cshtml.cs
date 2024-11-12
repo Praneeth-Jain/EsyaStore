@@ -28,8 +28,10 @@ namespace EsyaStore.Pages.Product
         public Reviews Review { get; set; } = new Reviews();
         public List<Reviews> ProductReviews { get; set; } = new List<Reviews>();
 
-        [BindProperty]
         public Products Products { get; set; }
+
+        public double? AvgRatings { get; set; }
+
         public ProductDetailsModel(ApplicationDbContext context)
         {
             _context = context;
@@ -38,6 +40,20 @@ namespace EsyaStore.Pages.Product
         {
             UserRole = HttpContext.Session.GetString("UserRole");
             Products=_context.products.Find(id);
+            if (Products != null) {
+                var avg = _context.reviews
+                .Where(r => r.ProductID == id)
+                .Select(r => (double?)r.Stars)  
+                .AsEnumerable()                 
+                .DefaultIfEmpty(null)           
+                .Average();
+
+
+                if (avg != null)
+                {
+                    AvgRatings = avg;
+                }
+            }
 
             var userId = HttpContext.Session.GetInt32("Id");
             if (userId.HasValue)

@@ -9,7 +9,6 @@ namespace EsyaStore.Pages.User
         {
             HttpContext.Session.Clear();
             return RedirectToPage("/User/Login");
-
         }
     }
 }

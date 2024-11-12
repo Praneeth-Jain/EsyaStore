@@ -47,34 +47,37 @@ namespace EsyaStore.Pages.Product
             _context.SaveChanges();
             return RedirectToPage("/Product/Cart");
         }
-        public IActionResult OnPostOrder()
+        public IActionResult OnPostOrder(int CartID,int Quantity,string Address)
         {
             var usrid = HttpContext.Session.GetInt32("Id");
-            var BuyCartItems = _context.cart.Where(c => c.UserId == usrid).ToList();
+            var BuyCartItems = _context.cart.Find(CartID);
 
-            if (!BuyCartItems.Any())
+            if (BuyCartItems==null)
             {
                 return RedirectToPage("/Product/Index");
             }
 
-            foreach (var item in BuyCartItems) {
-                var BuyProduct = _context.products.Find(item.ProductId);
-                if (BuyProduct == null||BuyProduct.ProductQuantity<1) {
-                    continue;
+            
+                var BuyProduct = _context.products.Find(BuyCartItems.ProductId);
+                if (BuyProduct == null||BuyProduct.ProductQuantity < Quantity) {
+                TempData["AlertMessage"] = $"{Quantity} items are not in stock";
+                    return RedirectToPage("/Product/Cart");
                 }
                 var newOrder = new Order
                 {
                     OrderNo = Guid.NewGuid().ToString(),
-                    UserId = item.UserId,
-                    ProductId = item.ProductId,
+                    UserId = BuyCartItems.UserId,
+                    ProductId = BuyCartItems.ProductId,
+                    Quantity=Quantity,
+                    Address = Address
                 };
                 _context.orders.Add(newOrder);
 
-                BuyProduct.ProductQuantity -= 1;
+                BuyProduct.ProductQuantity -= Quantity;
                 _context.products.Update(BuyProduct);
 
-                _context.cart.Remove(item);
-            }
+                _context.cart.Remove(BuyCartItems);
+            
             _context.SaveChanges();
 
 

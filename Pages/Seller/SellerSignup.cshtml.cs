@@ -34,7 +34,7 @@ namespace EsyaStore.Pages
                           .Where(x => x.Email == seller.Username && x.Password == seller.Password)
                           .FirstOrDefault();
 
-            if (getSellers != null)
+            if (getSellers != null&&getSellers.isActiveSeller==1)
             {
                 HttpContext.Session.SetString("UserRole", "Seller");
                 HttpContext.Session.SetInt32("SellerId", getSellers.Id);
@@ -45,7 +45,17 @@ namespace EsyaStore.Pages
             }
             else
             {
+                if (getSellers != null)
+                {
+                if (getSellers?.isActiveSeller == 0)
+                {
+                ErrorMessage = "This account has been suspended by Adminstrator.";
+                }
+                }
+                else
+                {
                 ErrorMessage = "Invalid username or password.";
+                }
                 return Page();
             }
         }

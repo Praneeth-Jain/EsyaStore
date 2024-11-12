@@ -10,5 +10,10 @@
         public DateTime OrderDate { get; set; }
 
         public int OrderStatus { get; set; } 
+
+        public int Quanity { get; set; }
+
+
+        public string Address { get; set; }
     }
 }
