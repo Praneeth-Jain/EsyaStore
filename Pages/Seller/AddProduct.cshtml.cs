@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
 
-namespace EsyaStore.Pages.Product
+namespace EsyaStore.Pages.Seller
 {
-  public class AddProductModel : PageModel
+    public class AddProductModel : PageModel
     {
         private readonly ApplicationDbContext _context;
         private readonly IWebHostEnvironment _env;
@@ -23,15 +23,16 @@ namespace EsyaStore.Pages.Product
 
         public void OnGet()
         {
-            var Role = HttpContext.Session.GetString("UserRole");
-            if (Role != "Seller")
-            {
-                Response.Redirect("/Seller/SellerSignup");
-                return;
-            }
+            //var Role = HttpContext.Session.GetString("UserRole");
+            //if (Role != "Seller")
+            //{
+            //    Response.Redirect("/Seller/SellerSignup");
+            //    return;
+            //}
         }
 
-        public IActionResult OnPostAddProduct() {
+        public IActionResult OnPostAddProduct()
+        {
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -48,9 +49,9 @@ namespace EsyaStore.Pages.Product
                 ProductCategory = Addproduct.ProductCategory,
                 ProductPrice = Addproduct.ProductPrice,
                 ProductQuantity = Addproduct.ProductQuantity,
-                Manufacturer=Addproduct.Manufacturer,
+                Manufacturer = Addproduct.Manufacturer,
                 ProdImgUrl = filename,
-                SellerId=SellerID
+                SellerId = SellerID
             };
             _context.products.Add(newProd);
             _context.SaveChanges();

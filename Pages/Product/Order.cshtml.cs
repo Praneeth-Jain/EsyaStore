@@ -20,11 +20,11 @@ namespace EsyaStore.Pages.Product
 
         public void OnGet()
         {
-            UserRole = HttpContext.Session.GetString("UserRole");
-            if (UserRole != "User")
-            {
-                RedirectToPage("User/Login");
-            }
+            //UserRole = HttpContext.Session.GetString("UserRole");
+            //if (UserRole != "User")
+            //{
+            //    RedirectToPage("User/Login");
+            //}
             var userid = HttpContext.Session.GetInt32("Id");
             userOrders = (from order in _context.orders
                           join product in _context.products on order.ProductId equals product.Id

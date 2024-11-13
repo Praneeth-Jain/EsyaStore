@@ -14,6 +14,7 @@ namespace EsyaStore.Pages
 
         private readonly ILogger<ErrorModel> _logger;
 
+        public string ErrorMessage { get; set; }
         public ErrorModel(ILogger<ErrorModel> logger)
         {
             _logger = logger;
@@ -21,7 +22,9 @@ namespace EsyaStore.Pages
 
         public void OnGet()
         {
-            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        ErrorMessage = "An unexpected error occurred. Please try again later.";
+        
+        RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
     }
 

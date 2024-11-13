@@ -20,11 +20,11 @@ namespace EsyaStore.Pages.Product
         }
         public void OnGet()
         {
-            UserRole = HttpContext.Session.GetString("UserRole");
-            if (UserRole != "User") {
-                Response.Redirect("/User/Login");
-                return;
-            }
+        //    UserRole = HttpContext.Session.GetString("UserRole");
+        //    if (UserRole != "User") {
+        //        Response.Redirect("/User/Login");
+        //        return;
+        //    }
 
             var usrId = HttpContext.Session.GetInt32("Id");
 

@@ -1,17 +1,14 @@
 ﻿@page
-@model ErrorModel
+@model EsyaStore.Pages.NotFoundModel
 @{
-    ViewData["Title"] = "Error";
     Layout = null;
 }
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Something Went Wrong</title>
+    <title>Page Not Found</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,11 +21,15 @@
         p {
             color: #808080;
         }
+        a{
+            text-decoration:none;
+        }
     </style>
 </head>
 <body>
-    <h1>Oops! Something went wrong.</h1>
-    <p>We are sorry, but an error occurred while processing your request.</p>
-    <p><a href="/">Go back to home page</a></p>
+    <h1>Oops! Page Not Found</h1>
+    <p>The page you are looking for might have been moved or deleted.</p>
+    <p><a asp-page="/Index">Go back to home page</a></p>
 </body>
 </html>
+    

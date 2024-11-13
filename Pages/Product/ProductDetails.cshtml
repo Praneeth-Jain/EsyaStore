@@ -47,7 +47,7 @@
                 <p class="card-text"><strong>Manufacturer:</strong> @Model.Products.Manufacturer</p>
                 @{
 
-                if(Model.Products.ProductQuantity>0)
+                if(Model.Products.ProductQuantity>0&&Model.isLoggedIn)
                 {
                 <form method="post" asp-page-handler="AddCart" class="mt-4">
                     <input type="hidden" value="@Model.Products.Id" asp-for="@Model.ProductDetailId" />

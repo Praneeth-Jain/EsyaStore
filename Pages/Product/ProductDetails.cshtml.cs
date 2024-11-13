@@ -32,6 +32,8 @@ namespace EsyaStore.Pages.Product
 
         public double? AvgRatings { get; set; }
 
+        public bool isLoggedIn { get; set; }
+
         public ProductDetailsModel(ApplicationDbContext context)
         {
             _context = context;
@@ -39,6 +41,14 @@ namespace EsyaStore.Pages.Product
         public void OnGet(int id)
         {
             UserRole = HttpContext.Session.GetString("UserRole");
+            if (UserRole == null)
+            {
+                isLoggedIn = false;
+            }
+            else
+            {
+                isLoggedIn=true;
+            }
             Products=_context.products.Find(id);
             if (Products != null) {
                 var avg = _context.reviews
@@ -71,11 +81,11 @@ namespace EsyaStore.Pages.Product
             
         }
         public IActionResult OnPostAddCart() {
-            var role = HttpContext.Session.GetString("UserRole");
-            if (role != "User")
-            {
-                return RedirectToPage("/User/Login");
-            }
+            //var role = HttpContext.Session.GetString("UserRole");
+            //if (role != "User")
+            //{
+            //    return RedirectToPage("/User/Login");
+            //}
             
             var cartUsrId = (int)HttpContext.Session.GetInt32("Id");
             if(ProductDetailId == 0)

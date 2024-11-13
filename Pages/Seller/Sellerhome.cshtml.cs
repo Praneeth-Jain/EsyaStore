@@ -19,12 +19,12 @@ namespace EsyaStore.Pages.Seller
         public void OnGet()
         {
             var sellerId = HttpContext.Session.GetInt32("SellerId");
-            var Role= HttpContext.Session.GetString("UserRole");
-            if (Role != "Seller")
-            {
-                Response.Redirect("/Seller/SellerSignup");
-                return;
-            }
+            //var Role= HttpContext.Session.GetString("UserRole");
+            //if (Role != "Seller")
+            //{
+            //    Response.Redirect("/Seller/SellerSignup");
+            //    return;
+            //}
 
             orders = (from order in _context.orders
                           join products in _context.products on order.ProductId equals products.Id

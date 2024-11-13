@@ -25,12 +25,12 @@ namespace EsyaStore.Pages.Seller
         public void OnGet(int id)
         {
             var sellerId = HttpContext.Session.GetInt32("SellerId");
-            var Role = HttpContext.Session.GetString("UserRole");
-            if (Role != "Seller")
-            {
-                Response.Redirect("/Seller/SellerSignup");
-                return;
-            }
+            //var Role = HttpContext.Session.GetString("UserRole");
+            //if (Role != "Seller")
+            //{
+            //    Response.Redirect("/Seller/SellerSignup");
+            //    return;
+            //}
             var Product=_context.products.Find(id);
             if (Product.SellerId != sellerId)
             {

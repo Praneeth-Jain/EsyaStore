@@ -19,12 +19,12 @@ namespace EsyaStore.Pages.Seller
         }
         public void OnGet(int id)
         {
-            var UserRole = HttpContext.Session.GetString("UserRole");
-            if (UserRole != "Seller")
-            {
-                Response.Redirect("/Seller/SellerSignup");
-                return;
-            }
+        //    var UserRole = HttpContext.Session.GetString("UserRole");
+        //    if (UserRole != "Seller")
+        //    {
+        //        Response.Redirect("/Seller/SellerSignup");
+        //        return;
+        //    }
             reviews = (from reviews in _context.reviews join user in _context.users on 
                        reviews.UserID equals user.Id where reviews.ProductID==id
                        select new ReviewViewModel
