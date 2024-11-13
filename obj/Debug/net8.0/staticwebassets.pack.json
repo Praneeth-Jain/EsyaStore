@@ -1,303 +1,303 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EsyaStore.bundle.scp.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EsyaStore.bundle.scp.css",
       "PackagePath": "staticwebassets\\EsyaStore.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Landing.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\css\\Landing.css",
       "PackagePath": "staticwebassets\\css\\Landing.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\Product.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\css\\Product.css",
       "PackagePath": "staticwebassets\\css\\Product.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\electronics icon with a green and black theme.png",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\img\\electronics icon with a green and black theme.png",
       "PackagePath": "staticwebassets\\img\\electronics icon with a green and black theme.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\fashion icon with a green and black theme.png",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\img\\fashion icon with a green and black theme.png",
       "PackagePath": "staticwebassets\\img\\fashion icon with a green and black theme.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\hero-banner.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\img\\hero-banner.jpg",
       "PackagePath": "staticwebassets\\img\\hero-banner.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\img\\home and kitchen icon with a green and black theme.png",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\img\\home and kitchen icon with a green and black theme.png",
       "PackagePath": "staticwebassets\\img\\home and kitchen icon with a green and black theme.png"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\4b8858ba-7e3c-4900-b2e1-28f7227e1416.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\4b8858ba-7e3c-4900-b2e1-28f7227e1416.jpg",
       "PackagePath": "staticwebassets\\uploads\\4b8858ba-7e3c-4900-b2e1-28f7227e1416.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\5247ac38-18c2-4331-81eb-82464688834c.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\5247ac38-18c2-4331-81eb-82464688834c.jpg",
       "PackagePath": "staticwebassets\\uploads\\5247ac38-18c2-4331-81eb-82464688834c.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg",
       "PackagePath": "staticwebassets\\uploads\\65c9c14a-8c2d-43b3-a80b-6ba70b5fcd5e.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\7e412985-1733-4efc-be4a-11e51896b714.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\7e412985-1733-4efc-be4a-11e51896b714.jpg",
       "PackagePath": "staticwebassets\\uploads\\7e412985-1733-4efc-be4a-11e51896b714.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\87b32c26-76f9-4858-aa98-49ec49da8eea.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\87b32c26-76f9-4858-aa98-49ec49da8eea.jpg",
       "PackagePath": "staticwebassets\\uploads\\87b32c26-76f9-4858-aa98-49ec49da8eea.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg",
       "PackagePath": "staticwebassets\\uploads\\b1ab5a6f-c3b7-4d05-a56b-23e5f0633a89.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\b51a72e5-9e37-45ea-814b-e1f824a360a4.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\b51a72e5-9e37-45ea-814b-e1f824a360a4.jpg",
       "PackagePath": "staticwebassets\\uploads\\b51a72e5-9e37-45ea-814b-e1f824a360a4.jpg"
     },
     {
-      "Id": "C:\\Users\\user\\source\\repos\\EsyaStore\\wwwroot\\uploads\\f856e72d-67df-4d94-8923-f90f9166673f.jpg",
+      "Id": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\wwwroot\\uploads\\f856e72d-67df-4d94-8923-f90f9166673f.jpg",
       "PackagePath": "staticwebassets\\uploads\\f856e72d-67df-4d94-8923-f90f9166673f.jpg"
     },
     {

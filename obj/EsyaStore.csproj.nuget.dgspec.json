@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\EsyaStore\\EsyaStore.csproj": {}
+    "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\EsyaStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\EsyaStore\\EsyaStore.csproj": {
+    "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\EsyaStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\EsyaStore\\EsyaStore.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\EsyaStore.csproj",
         "projectName": "EsyaStore",
-        "projectPath": "C:\\Users\\user\\source\\repos\\EsyaStore\\EsyaStore.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\EsyaStore.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\EsyaStore\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Basic-Project\\EsyaStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
