@@ -18,6 +18,9 @@
 
         {
             <div class="review-item col-4 mb-3 p-3 border rounded">
+
+                <p class="fw-bold">Name: @review.Username </p>
+                <p class="fw-bold">Mail: @review.UserEmail </p>
                 <p class="fw-bold">Rating: @review.Stars / 5</p>
                 <p>@review.ReviewDescription</p>
                 <p class="text-muted">Reviewed on @review.ReviewDate.ToString("MMMM dd, yyyy")</p>
