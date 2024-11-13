@@ -33,6 +33,7 @@ namespace EsyaStore.Pages.Product
                           {
                               OrderId = order.Id,
                               OrderNo=order.OrderNo,
+                              ProductId=product.Id,
                               ProductName = product.ProductName,
                               ProductImage = product.ProdImgUrl, 
                               OrderDate = order.OrderDate,

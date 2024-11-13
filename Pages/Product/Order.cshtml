@@ -20,7 +20,11 @@
                     </div>
 
                     <div class="col-9" style="padding-left: 20px;">
-                        <h5 class="card-title" style="color: #007bff; font-weight: bold;">@order.ProductName</h5>
+                        <h5 class="card-title" style="color: #007bff; font-weight: bold;">
+                            <a class="text-decoration-none" asp-page="/Product/ProductDetails" asp-route-id="@order.ProductId">
+                            @order.ProductName
+                            </a>
+                            </h5>
                         <p class="card-text" style="font-size: 1rem;">
                             <strong>Order No:</strong> @order.OrderNo <br />
                             <strong>Quantity:</strong> @order.Quanity <br />
