@@ -38,7 +38,6 @@ namespace EsyaStore.Pages.Seller
                               OrderStatus = order.OrderStatus,
                               Quantity = order.Quantity,
                               Address = order.Address,
-                              TotalPrice=products.ProductPrice*order.Quantity,
                               UserId = order.UserId,
                               UserName = user.Name,
                               UserEmail = user.Email, 
@@ -46,7 +45,7 @@ namespace EsyaStore.Pages.Seller
                               ProductId = products.Id,
                               ProductName = products.ProductName,
                               ProductDescription = products.ProductDescription,
-                              ProductPrice = products.ProductPrice,
+                              ProductPrice = order.OrderPrice * order.Quantity,
                               ProductCategory = products.ProductCategory,
                               Manufacturer = products.Manufacturer,
                               ProdImgUrl = products.ProdImgUrl

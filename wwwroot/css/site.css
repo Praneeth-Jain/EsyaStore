@@ -49,8 +49,18 @@ body {
     transition: color 0.3s ease;
 }
 
+.middlebrand{
+    display:grid;
+    place-content:center;
+}
+
+.loginnav:hover {
+    color: #000 !important;
+    transform: scale(1.15);
+}
+
     .navbar-brand:hover {
-        color: #fff !important;
+        color: #fff;
     }
 
 /* Footer Styling */

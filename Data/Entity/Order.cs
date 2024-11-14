@@ -25,5 +25,7 @@ namespace EsyaStore.Data.Entity
         [Required,MaxLength(150)]
         public string Address { get; set; }
 
+        public decimal OrderPrice { get; set; }
+
     }
 }

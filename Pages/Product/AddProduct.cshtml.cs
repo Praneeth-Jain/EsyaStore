@@ -49,6 +49,8 @@ namespace EsyaStore.Pages.Product
                 ProductPrice = Addproduct.ProductPrice,
                 ProductQuantity = Addproduct.ProductQuantity,
                 Manufacturer=Addproduct.Manufacturer,
+                Discount=Addproduct.Discount,
+                FinalPrice=Addproduct.ProductPrice-((Addproduct.ProductPrice*Addproduct.Discount)/100),
                 ProdImgUrl = filename,
                 SellerId=SellerID
             };

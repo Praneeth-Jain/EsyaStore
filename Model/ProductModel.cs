@@ -24,5 +24,9 @@ namespace EsyaStore.Model
 
         public IFormFile ProductImg { get; set; }
 
+        [Range(0,100)]
+        public int Discount { get; set; }
+
+
     }
 }

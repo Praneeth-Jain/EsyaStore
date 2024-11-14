@@ -38,6 +38,7 @@ namespace EsyaStore.Pages.Product
                               ProductImage = product.ProdImgUrl, 
                               OrderDate = order.OrderDate,
                               OrderStatus = order.OrderStatus,
+                              OrderPrice = order.OrderPrice,
                               Quanity=order.Quantity,
                               Address=order.Address
                           }).ToList();

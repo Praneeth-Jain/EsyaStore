@@ -68,6 +68,7 @@ namespace EsyaStore.Pages.Product
                     OrderNo = Guid.NewGuid().ToString(),
                     UserId = BuyCartItems.UserId,
                     ProductId = BuyCartItems.ProductId,
+                    OrderPrice= BuyProduct.ProductPrice,
                     Quantity=Quantity,
                     Address = Address
                 };

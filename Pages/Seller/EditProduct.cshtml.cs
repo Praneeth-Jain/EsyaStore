@@ -53,10 +53,12 @@ namespace EsyaStore.Pages.Seller
                     NewImage.CopyToAsync(filestream);
                 }
                 
-               
+                
                 EditedProduct.ProductName=SelectedProduct.ProductName;
                 EditedProduct.ProductPrice = SelectedProduct.ProductPrice;
                 EditedProduct.ProductQuantity = SelectedProduct.ProductQuantity;
+                EditedProduct.Discount=SelectedProduct.Discount;
+                EditedProduct.FinalPrice = SelectedProduct.ProductPrice - ((SelectedProduct.ProductPrice * SelectedProduct.Discount) / 100);
                 EditedProduct.ProductDescription = SelectedProduct.ProductDescription;
                 EditedProduct.Manufacturer = SelectedProduct.Manufacturer;
                 EditedProduct.ProductCategory = SelectedProduct.ProductCategory;

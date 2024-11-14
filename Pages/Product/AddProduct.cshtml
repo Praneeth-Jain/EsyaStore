@@ -1,6 +1,7 @@
 ﻿@page
 @model EsyaStore.Pages.Product.AddProductModel
 @{
+    Layout = "_SellerLayout";
 }
 
 <div class="container">
@@ -42,6 +43,11 @@
             <label asp-for="Addproduct.ProductQuantity" class="control-label">Product Quantity</label>
             <input asp-for="Addproduct.ProductQuantity" class="form-control" />
             <span asp-validation-for="Addproduct.ProductQuantity" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Addproduct.Discount" class="control-label">Product Discount(in %)</label>
+            <input asp-for="Addproduct.Discount" class="form-control" />
+            <span asp-validation-for="Addproduct.Discount" class="text-danger"></span>
         </div>
         <div class="form-group">
             <label asp-for="Addproduct.ProductImg" class="control-label">Product Image</label>

@@ -26,6 +26,12 @@ namespace EsyaStore.Data.Entity
 
         public string ProdImgUrl { get; set; }
 
+
         public int SellerId { get; set; }
+
+        [Range(0, 100)]
+        public int Discount { get; set; } = 0;
+
+        public decimal FinalPrice { get; set; }
     }
 }

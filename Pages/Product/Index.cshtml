@@ -53,7 +53,7 @@
                         {
                             <div class="col-md-4 mb-4">
                                 <div class="card product-card">
-                                    <span class="price-tag">&#8377; @prods.ProductPrice</span>
+                                    <span class="price-tag">&#8377; @prods.FinalPrice</span>
 
                                     
 
@@ -61,7 +61,7 @@
 
                                     <div class="card-body">
                                         <h5 class="card-title">@prods.ProductName</h5>
-                                        <p class="card-text">&#8377; @prods.ProductPrice</p>
+                                        <p class="card-text">&#8377; @prods.FinalPrice <span class="text-decoration-line-through">&#8377; @prods.ProductPrice </span> (@prods.Discount % off) </p>
                                         <a class="btn btn-primary text-decoration-none text-light" asp-route-id="@prods.Id" asp-page="/Product/ProductDetails">View</a>
                                     </div>
                                 </div>

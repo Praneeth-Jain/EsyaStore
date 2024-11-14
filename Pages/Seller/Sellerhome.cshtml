@@ -8,6 +8,10 @@
     <div class="mb-4 text-center">
         <h2 style="color: #007bff; font-weight: bold;">Welcome to Seller Dashboard</h2>
     </div>
+    <div class="text-center mt-4 mb-4">
+        <a asp-page="/Product/AddProduct" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Add More Products</a>
+        <a asp-page="/Seller/SellerProducts" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Browse My Products</a>
+    </div>
 
     <div class="row">
         @foreach (var order in Model.orders)
@@ -23,7 +27,7 @@
                             <strong>Order Date:</strong> @order.OrderDate.ToString("dd-MM-yyyy")<br />
                             <strong>User Name:</strong> @order.UserName<br />
                             <strong>Email:</strong> @order.UserEmail<br />
-                            <strong>Amount:</strong> @order.TotalPrice<br />
+                            <strong>Amount:</strong> @order.ProductPrice<br />
                             <strong>Quantity:</strong> @order.Quantity<br />
                             <strong>Address :</strong> @order.Address<br />
                             <strong>Category:</strong> @order.ProductCategory<br />
@@ -39,10 +43,6 @@
         }
     </div>
 
-    <div class="text-center mt-4">
-        <a asp-page="/Product/AddProduct" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Add More Products</a>
-        <a asp-page="/Seller/SellerProducts" class="btn btn-outline-primary" style="border-radius: 5px; color: #007bff; text-decoration: none; padding: 10px 20px; font-size: 16px; border: 1px solid #007bff;">Browse My Products</a>
-    </div>
     </div>
 </div>
 

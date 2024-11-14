@@ -12,7 +12,7 @@
 
             <div class="col-md-6">
                 <h2 class="fw-bold">@Model.Products.ProductName</h2>
-                <p class="h4 text-primary mt-3">&#8377; @Model.Products.ProductPrice</p>
+                <p class="h4 text-primary mt-3">&#8377; @Model.Products.FinalPrice <span class="text-decoration-line-through text-secondary">&#8377; @Model.Products.ProductPrice </span> <span class="text-info">(@Model.Products.Discount % off)</span>  </p>
                 @{
                     if(@Model.AvgRatings!=null){
                         <p class="card-text">Avg Rating : @Model.AvgRatings

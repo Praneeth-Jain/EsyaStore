@@ -24,6 +24,11 @@
             <input asp-for="SelectedProduct.ProductPrice" class="form-control" />
             <span asp-validation-for="SelectedProduct.ProductPrice" class="text-danger"></span>
         </div>
+        <div class="form-group">
+            <label asp-for="SelectedProduct.Discount" class="control-label">Discount (in %)</label>
+            <input asp-for="SelectedProduct.Discount" class="form-control" />
+            <span asp-validation-for="SelectedProduct.Discount" class="text-danger"></span>
+        </div>
 
         <div class="form-group">
             <label asp-for="SelectedProduct.ProductCategory" class="control-label">Product Category:</label>
