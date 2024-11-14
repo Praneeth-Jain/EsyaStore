@@ -9,6 +9,9 @@ namespace EsyaStore.Pages.Admin
         private readonly ApplicationDbContext _context;
         
         public int Count { get; set; }
+        public int DateCount { get; set; }
+
+        public int MonthCount { get; set; }
 
         public List<TopSellingProduct> TopProducts { get; set; }
 
@@ -21,6 +24,10 @@ namespace EsyaStore.Pages.Admin
         public void OnGet()
         {
             Count = _context.orders.Count();
+
+            DateCount = _context.orders.Where(r => r.OrderDate.Date == DateTime.Now.Date).Count();
+            
+            MonthCount = _context.orders.Where(r => r.OrderDate.Month == DateTime.Now.Month).Count();
 
              TopProducts = _context.orders
             .AsEnumerable() 

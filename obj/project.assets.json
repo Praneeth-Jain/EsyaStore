@@ -4045,11 +4045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Discount\\EsyaStore\\EsyaStore.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Dev\\EsyaStore\\EsyaStore.csproj",
       "projectName": "EsyaStore",
-      "projectPath": "C:\\Users\\user\\Desktop\\Discount\\EsyaStore\\EsyaStore.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Dev\\EsyaStore\\EsyaStore.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Discount\\EsyaStore\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Dev\\EsyaStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
