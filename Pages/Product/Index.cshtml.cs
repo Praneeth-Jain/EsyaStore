@@ -2,7 +2,9 @@ using EsyaStore.Data.Context;
 using EsyaStore.Data.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace EsyaStore.Pages.Product
 {
@@ -25,6 +27,9 @@ namespace EsyaStore.Pages.Product
 
         public decimal AvgRating { get; set; }
 
+        [BindProperty(SupportsGet =true)]
+        public int MaxRange { get; set; }
+
         public IndexModel (ApplicationDbContext context)
         {
             _context = context;
@@ -42,10 +47,15 @@ namespace EsyaStore.Pages.Product
             if(SearchQuery != null)
             {
                FilteredProducts=FilteredProducts.Where(r=>r.ProductName.Contains(SearchQuery));
+               
             }
             if (!string.IsNullOrEmpty(SelectedCategory))
             {
                 FilteredProducts = FilteredProducts.Where(p => p.ProductCategory == SelectedCategory);
+            }
+            if (MaxRange > 0)
+            {
+                FilteredProducts=FilteredProducts.Where(p=>p.FinalPrice < MaxRange);
             }
             ProductList = FilteredProducts.ToList();
         }
